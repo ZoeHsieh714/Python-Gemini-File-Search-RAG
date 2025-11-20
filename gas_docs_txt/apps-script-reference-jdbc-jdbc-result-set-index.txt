@@ -11,12 +11,9 @@ https://www.googleapis.com/auth/script.external_request
 scope.
 Data can be retrieved and updated using methods that accept column index or label.
 The documentation details methods for retrieving result set properties and managing cursor movement and state.
-Jdbc
-Result
-Set
+JdbcResultSet
 A JDBC
-Result
-Set
+ResultSet
 . For documentation of this class, see
 java.sql.ResultSet
 .
@@ -29,27 +26,22 @@ Boolean
 For documentation of this method, see
 java.sql.ResultSet#absolute(int)
 .
-after
-Last()
+afterLast()
 void
 For documentation of this method, see
 java.sql.ResultSet#afterLast()
 .
-before
-First()
+beforeFirst()
 void
 For documentation of this method, see
 java.sql.ResultSet#beforeFirst()
 .
-cancel
-Row
-Updates()
+cancelRowUpdates()
 void
 For documentation of this method, see
 java.sql.ResultSet#cancelRowUpdates()
 .
-clear
-Warnings()
+clearWarnings()
 void
 For documentation of this method, see
 java.sql.ResultSet#clearWarnings()
@@ -59,14 +51,12 @@ void
 For documentation of this method, see
 java.sql.ResultSet#close()
 .
-delete
-Row()
+deleteRow()
 void
 For documentation of this method, see
 java.sql.ResultSet#deleteRow()
 .
-find
-Column(columnLabel)
+findColumn(columnLabel)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#findColumn(String)
@@ -76,453 +66,352 @@ Boolean
 For documentation of this method, see
 java.sql.ResultSet#first()
 .
-get
-Array(columnIndex)
-Jdbc
-Array
+getArray(columnIndex)
+JdbcArray
 For documentation of this method, see
 java.sql.ResultSet#getArray(int)
 .
-get
-Array(columnLabel)
-Jdbc
-Array
+getArray(columnLabel)
+JdbcArray
 For documentation of this method, see
 java.sql.ResultSet#getArray(String)
 .
-get
-Big
-Decimal(columnIndex)
-Big
-Number
+getBigDecimal(columnIndex)
+BigNumber
 For documentation of this method, see
 java.sql.ResultSet#getBigDecimal(int)
 .
-get
-Big
-Decimal(columnLabel)
-Big
-Number
+getBigDecimal(columnLabel)
+BigNumber
 For documentation of this method, see
 java.sql.ResultSet#getBigDecimal(String)
 .
-get
-Blob(columnIndex)
-Jdbc
-Blob
+getBlob(columnIndex)
+JdbcBlob
 For documentation of this method, see
 java.sql.ResultSet#getBlob(int)
 .
-get
-Blob(columnLabel)
-Jdbc
-Blob
+getBlob(columnLabel)
+JdbcBlob
 For documentation of this method, see
 java.sql.ResultSet#getBlob(String)
 .
-get
-Boolean(columnIndex)
+getBoolean(columnIndex)
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#getBoolean(int)
 .
-get
-Boolean(columnLabel)
+getBoolean(columnLabel)
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#getBoolean(String)
 .
-get
-Byte(columnIndex)
+getByte(columnIndex)
 Byte
 For documentation of this method, see
 java.sql.ResultSet#getByte(int)
 .
-get
-Byte(columnLabel)
+getByte(columnLabel)
 Byte
 For documentation of this method, see
 java.sql.ResultSet#getByte(String)
 .
-get
-Bytes(columnIndex)
+getBytes(columnIndex)
 Byte[]
 For documentation of this method, see
 java.sql.ResultSet#getBytes(int)
 .
-get
-Bytes(columnLabel)
+getBytes(columnLabel)
 Byte[]
 For documentation of this method, see
 java.sql.ResultSet#getBytes(String)
 .
-get
-Clob(columnIndex)
-Jdbc
-Clob
+getClob(columnIndex)
+JdbcClob
 For documentation of this method, see
 java.sql.ResultSet#getClob(int)
 .
-get
-Clob(columnLabel)
-Jdbc
-Clob
+getClob(columnLabel)
+JdbcClob
 For documentation of this method, see
 java.sql.ResultSet#getClob(String)
 .
-get
-Concurrency()
+getConcurrency()
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getConcurrency()
 .
-get
-Cursor
-Name()
+getCursorName()
 String
 For documentation of this method, see
 java.sql.ResultSet#getCursorName()
 .
-get
-Date(columnIndex)
-Jdbc
-Date
+getDate(columnIndex)
+JdbcDate
 For documentation of this method, see
 java.sql.ResultSet#getDate(int)
 .
-get
-Date(columnIndex, timeZone)
-Jdbc
-Date
+getDate(columnIndex, timeZone)
+JdbcDate
 For documentation of this method, see
 java.sql.ResultSet#getDate(int, Calendar)
 .
-get
-Date(columnLabel)
-Jdbc
-Date
+getDate(columnLabel)
+JdbcDate
 For documentation of this method, see
 java.sql.ResultSet#getDate(String)
 .
-get
-Date(columnLabel, timeZone)
-Jdbc
-Date
+getDate(columnLabel, timeZone)
+JdbcDate
 For documentation of this method, see
 java.sql.ResultSet#getDate(String, Calendar)
 .
-get
-Double(columnIndex)
+getDouble(columnIndex)
 Number
 For documentation of this method, see
 java.sql.ResultSet#getDouble(int)
 .
-get
-Double(columnLabel)
+getDouble(columnLabel)
 Number
 For documentation of this method, see
 java.sql.ResultSet#getDouble(String)
 .
-get
-Fetch
-Direction()
+getFetchDirection()
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getFetchDirection()
 .
-get
-Fetch
-Size()
+getFetchSize()
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getFetchSize()
 .
-get
-Float(columnIndex)
+getFloat(columnIndex)
 Number
 For documentation of this method, see
 java.sql.ResultSet#getFloat(int)
 .
-get
-Float(columnLabel)
+getFloat(columnLabel)
 Number
 For documentation of this method, see
 java.sql.ResultSet#getFloat(String)
 .
-get
-Holdability()
+getHoldability()
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getHoldability()
 .
-get
-Int(columnIndex)
+getInt(columnIndex)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getInt(int)
 .
-get
-Int(columnLabel)
+getInt(columnLabel)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getInt(String)
 .
-get
-Long(columnIndex)
+getLong(columnIndex)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getLong(int)
 .
-get
-Long(columnLabel)
+getLong(columnLabel)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getLong(String)
 .
-get
-Meta
-Data()
-Jdbc
-Result
-Set
-Meta
-Data
+getMetaData()
+JdbcResultSetMetaData
 For documentation of this method, see
 java.sql.ResultSet#getMetaData()
 .
-get
-NClob(columnIndex)
-Jdbc
-Clob
+getNClob(columnIndex)
+JdbcClob
 For documentation of this method, see
 java.sql.ResultSet#getNClob(int)
 .
-get
-NClob(columnLabel)
-Jdbc
-Clob
+getNClob(columnLabel)
+JdbcClob
 For documentation of this method, see
 java.sql.ResultSet#getNClob(String)
 .
-get
-NString(columnIndex)
+getNString(columnIndex)
 String
 For documentation of this method, see
 java.sql.ResultSet#getNString(int)
 .
-get
-NString(columnLabel)
+getNString(columnLabel)
 String
 For documentation of this method, see
 java.sql.ResultSet#getNString(String)
 .
-get
-Object(columnIndex)
+getObject(columnIndex)
 Object
 For documentation of this method, see
 java.sql.ResultSet#getObject(int)
 .
-get
-Object(columnLabel)
+getObject(columnLabel)
 Object
 For documentation of this method, see
 java.sql.ResultSet#getObject(String)
 .
-get
-Ref(columnIndex)
-Jdbc
-Ref
+getRef(columnIndex)
+JdbcRef
 For documentation of this method, see
 java.sql.ResultSet#getRef(int)
 .
-get
-Ref(columnLabel)
-Jdbc
-Ref
+getRef(columnLabel)
+JdbcRef
 For documentation of this method, see
 java.sql.ResultSet#getRef(String)
 .
-get
-Row()
+getRow()
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getRow()
 .
-get
-Row
-Id(columnIndex)
-Jdbc
-Row
-Id
+getRowId(columnIndex)
+JdbcRowId
 For documentation of this method, see
 java.sql.ResultSet#getRowId(int)
 .
-get
-Row
-Id(columnLabel)
-Jdbc
-Row
-Id
+getRowId(columnLabel)
+JdbcRowId
 For documentation of this method, see
 java.sql.ResultSet#getRowId(String)
 .
-get
-SQLXML(columnIndex)
-Jdbc
-SQLXML
+getRows(queryString)
+Object[][]
+Returns all the rows from this
+ResultSet
+object.
+getRows(queryString, batchSize)
+Object[][]
+Returns up to
+batchSize
+rows from this
+ResultSet
+object.
+getSQLXML(columnIndex)
+JdbcSQLXML
 For documentation of this method, see
 java.sql.ResultSet#getSQLXML(int)
 .
-get
-SQLXML(columnLabel)
-Jdbc
-SQLXML
+getSQLXML(columnLabel)
+JdbcSQLXML
 For documentation of this method, see
 java.sql.ResultSet#getSQLXML(String)
 .
-get
-Short(columnIndex)
+getShort(columnIndex)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getShort(int)
 .
-get
-Short(columnLabel)
+getShort(columnLabel)
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getShort(String)
 .
-get
-Statement()
-Jdbc
-Statement
+getStatement()
+JdbcStatement
 For documentation of this method, see
 java.sql.ResultSet#getStatement()
 .
-get
-String(columnIndex)
+getString(columnIndex)
 String
 For documentation of this method, see
 java.sql.ResultSet#getString(int)
 .
-get
-String(columnLabel)
+getString(columnLabel)
 String
 For documentation of this method, see
 java.sql.ResultSet#getString(String)
 .
-get
-Time(columnIndex)
-Jdbc
-Time
+getTime(columnIndex)
+JdbcTime
 For documentation of this method, see
 java.sql.ResultSet#getTime(int)
 .
-get
-Time(columnIndex, timeZone)
-Jdbc
-Time
+getTime(columnIndex, timeZone)
+JdbcTime
 For documentation of this method, see
 java.sql.ResultSet#getTime(int, Calendar)
 .
-get
-Time(columnLabel)
-Jdbc
-Time
+getTime(columnLabel)
+JdbcTime
 For documentation of this method, see
 java.sql.ResultSet#getTime(String)
 .
-get
-Time(columnLabel, timeZone)
-Jdbc
-Time
+getTime(columnLabel, timeZone)
+JdbcTime
 For documentation of this method, see
 java.sql.ResultSet#getTime(String, Calendar)
 .
-get
-Timestamp(columnIndex)
-Jdbc
-Timestamp
+getTimestamp(columnIndex)
+JdbcTimestamp
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(int)
 .
-get
-Timestamp(columnIndex, timeZone)
-Jdbc
-Timestamp
+getTimestamp(columnIndex, timeZone)
+JdbcTimestamp
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(int, Calendar)
 .
-get
-Timestamp(columnLabel)
-Jdbc
-Timestamp
+getTimestamp(columnLabel)
+JdbcTimestamp
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(String)
 .
-get
-Timestamp(columnLabel, timeZone)
-Jdbc
-Timestamp
+getTimestamp(columnLabel, timeZone)
+JdbcTimestamp
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(String, Calendar)
 .
-get
-Type()
+getType()
 Integer
 For documentation of this method, see
 java.sql.ResultSet#getType()
 .
-get
-URL(columnIndex)
+getURL(columnIndex)
 String
 For documentation of this method, see
 java.sql.ResultSet#getURL(int)
 .
-get
-URL(columnLabel)
+getURL(columnLabel)
 String
 For documentation of this method, see
 java.sql.ResultSet#getURL(String)
 .
-get
-Warnings()
+getWarnings()
 String[]
 Returns the current set of warnings reported by the driver.
-insert
-Row()
+insertRow()
 void
 For documentation of this method, see
 java.sql.ResultSet#insertRow()
 .
-is
-After
-Last()
+isAfterLast()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#isAfterLast()
 .
-is
-Before
-First()
+isBeforeFirst()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#isBeforeFirst()
 .
-is
-Closed()
+isClosed()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#isClosed()
 .
-is
-First()
+isFirst()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#isFirst()
 .
-is
-Last()
+isLast()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#isLast()
@@ -532,18 +421,12 @@ Boolean
 For documentation of this method, see
 java.sql.ResultSet#first()
 .
-move
-To
-Current
-Row()
+moveToCurrentRow()
 void
 For documentation of this method, see
 java.sql.ResultSet#moveToCurrentRow()
 .
-move
-To
-Insert
-Row()
+moveToInsertRow()
 void
 For documentation of this method, see
 java.sql.ResultSet#moveToInsertRow()
@@ -558,8 +441,7 @@ Boolean
 For documentation of this method, see
 java.sql.ResultSet#previous()
 .
-refresh
-Row()
+refreshRow()
 void
 For documentation of this method, see
 java.sql.ResultSet#refreshRow()
@@ -569,338 +451,277 @@ Boolean
 For documentation of this method, see
 java.sql.ResultSet#relative(int)
 .
-row
-Deleted()
+rowDeleted()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#rowDeleted()
 .
-row
-Inserted()
+rowInserted()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#rowInserted()
 .
-row
-Updated()
+rowUpdated()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#rowUpdated()
 .
-set
-Fetch
-Direction(direction)
+setFetchDirection(direction)
 void
 For documentation of this method, see
 java.sql.ResultSet#setFetchDirection(int)
 .
-set
-Fetch
-Size(rows)
+setFetchSize(rows)
 void
 For documentation of this method, see
 java.sql.ResultSet#setFetchSize(int)
 .
-update
-Array(columnIndex, x)
+updateArray(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateArray(int, Array)
 .
-update
-Array(columnLabel, x)
+updateArray(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateArray(String, Array)
 .
-update
-Big
-Decimal(columnIndex, x)
+updateBigDecimal(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBigDecimal(int, BigDecimal)
 .
-update
-Big
-Decimal(columnLabel, x)
+updateBigDecimal(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBigDecimal(String, BigDecimal)
 .
-update
-Blob(columnIndex, x)
+updateBlob(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBlob(int, Blob)
 .
-update
-Blob(columnLabel, x)
+updateBlob(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateRef(String, Blob)
 .
-update
-Boolean(columnIndex, x)
+updateBoolean(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBoolean(int, boolean)
 .
-update
-Boolean(columnLabel, x)
+updateBoolean(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBoolean(String, boolean)
 .
-update
-Byte(columnIndex, x)
+updateByte(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateByte(int, byte)
 .
-update
-Byte(columnLabel, x)
+updateByte(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateByte(String, byte)
 .
-update
-Bytes(columnIndex, x)
+updateBytes(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBytes(int, byte[])
 .
-update
-Bytes(columnLabel, x)
+updateBytes(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateBytes(String, byte[])
 .
-update
-Clob(columnIndex, x)
+updateClob(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateClob(int, Clob)
 .
-update
-Clob(columnLabel, x)
+updateClob(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateClob(String, Clob)
 .
-update
-Date(columnIndex, x)
+updateDate(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateDate(int, Date)
 .
-update
-Date(columnLabel, x)
+updateDate(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateDate(String, Date)
 .
-update
-Double(columnIndex, x)
+updateDouble(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateDouble(int, double)
 .
-update
-Double(columnLabel, x)
+updateDouble(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateDouble(String, double)
 .
-update
-Float(columnIndex, x)
+updateFloat(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateFloat(int, float)
 .
-update
-Float(columnLabel, x)
+updateFloat(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateFloat(String, float)
 .
-update
-Int(columnIndex, x)
+updateInt(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateInt(int, int)
 .
-update
-Int(columnLabel, x)
+updateInt(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateInt(String, int)
 .
-update
-Long(columnIndex, x)
+updateLong(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateLong(int, long)
 .
-update
-Long(columnLabel, x)
+updateLong(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateLong(String, long)
 .
-update
-NClob(columnIndex, x)
+updateNClob(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateNClob(int, NClob)
 .
-update
-NClob(columnLabel, x)
+updateNClob(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateNClob(String, NClob)
 .
-update
-NString(columnIndex, x)
+updateNString(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateNString(int, String)
 .
-update
-NString(columnLabel, x)
+updateNString(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateNString(String, String)
 .
-update
-Null(columnIndex)
+updateNull(columnIndex)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateNull(int)
 .
-update
-Null(columnLabel)
+updateNull(columnLabel)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateNull(String)
 .
-update
-Object(columnIndex, x)
+updateObject(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateObject(int, Object)
 .
-update
-Object(columnIndex, x, scaleOrLength)
+updateObject(columnIndex, x, scaleOrLength)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateObject(int, Object, int)
 .
-update
-Object(columnLabel, x)
+updateObject(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateObject(String, Object)
 .
-update
-Object(columnLabel, x, scaleOrLength)
+updateObject(columnLabel, x, scaleOrLength)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateObject(String, Object, int)
 .
-update
-Ref(columnIndex, x)
+updateRef(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateRef(int, Ref)
 .
-update
-Ref(columnLabel, x)
+updateRef(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateRef(String, Ref)
 .
-update
-Row()
+updateRow()
 void
 For documentation of this method, see
 java.sql.ResultSet#updateRow()
 .
-update
-Row
-Id(columnIndex, x)
+updateRowId(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateRowId(int, RowId)
 .
-update
-Row
-Id(columnLabel, x)
+updateRowId(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateRowId(String, RowId)
 .
-update
-SQLXML(columnIndex, x)
+updateSQLXML(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateSQLXML(int, SQLXML)
 .
-update
-SQLXML(columnLabel, x)
+updateSQLXML(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateSQLXML(String, SQLXML)
 .
-update
-Short(columnIndex, x)
+updateShort(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateShort(int, short)
 .
-update
-Short(columnLabel, x)
+updateShort(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateShort(String, short)
 .
-update
-String(columnIndex, x)
+updateString(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateString(int, String)
 .
-update
-String(columnLabel, x)
+updateString(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateString(String, String)
 .
-update
-Time(columnIndex, x)
+updateTime(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateTime(int, Time)
 .
-update
-Time(columnLabel, x)
+updateTime(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateTime(String, Time)
 .
-update
-Timestamp(columnIndex, x)
+updateTimestamp(columnIndex, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateTimestamp(int, Timestamp)
 .
-update
-Timestamp(columnLabel, x)
+updateTimestamp(columnLabel, x)
 void
 For documentation of this method, see
 java.sql.ResultSet#updateTimestamp(String, Timestamp)
 .
-was
-Null()
+wasNull()
 Boolean
 For documentation of this method, see
 java.sql.ResultSet#wasNull()
@@ -932,8 +753,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-after
-Last()
+afterLast()
 For documentation of this method, see
 java.sql.ResultSet#afterLast()
 .
@@ -942,8 +762,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-before
-First()
+beforeFirst()
 For documentation of this method, see
 java.sql.ResultSet#beforeFirst()
 .
@@ -952,9 +771,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-cancel
-Row
-Updates()
+cancelRowUpdates()
 For documentation of this method, see
 java.sql.ResultSet#cancelRowUpdates()
 .
@@ -963,8 +780,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-clear
-Warnings()
+clearWarnings()
 For documentation of this method, see
 java.sql.ResultSet#clearWarnings()
 .
@@ -977,8 +793,7 @@ close()
 For documentation of this method, see
 java.sql.ResultSet#close()
 .
-delete
-Row()
+deleteRow()
 For documentation of this method, see
 java.sql.ResultSet#deleteRow()
 .
@@ -987,8 +802,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-find
-Column(columnLabel)
+findColumn(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#findColumn(String)
 .
@@ -996,8 +810,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1026,8 +839,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Array(columnIndex)
+getArray(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getArray(int)
 .
@@ -1035,22 +847,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-Array
+JdbcArray
 — The value of the designated column in the current row of this result set as an array.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Array(columnLabel)
+getArray(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getArray(String)
 .
@@ -1058,23 +867,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Array
+JdbcArray
 — The value of the designated column in the current row of this result set as an array.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Big
-Decimal(columnIndex)
+getBigDecimal(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getBigDecimal(int)
 .
@@ -1082,14 +887,12 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Big
-Number
+BigNumber
 — The column value;
 null
 if the value was SQL
@@ -1100,9 +903,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Big
-Decimal(columnLabel)
+getBigDecimal(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getBigDecimal(String)
 .
@@ -1110,14 +911,12 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Big
-Number
+BigNumber
 — The column value;
 null
 if the value was SQL
@@ -1128,8 +927,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Blob(columnIndex)
+getBlob(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getBlob(int)
 .
@@ -1137,22 +935,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-Blob
+JdbcBlob
 — The value of the designated column in the current row of this result set as a blob.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Blob(columnLabel)
+getBlob(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getBlob(String)
 .
@@ -1160,22 +955,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Blob
+JdbcBlob
 — The value of the designated column in the current row of this result set as a blob.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Boolean(columnIndex)
+getBoolean(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getBoolean(int)
 .
@@ -1183,8 +975,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1200,8 +991,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Boolean(columnLabel)
+getBoolean(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getBoolean(String)
 .
@@ -1209,8 +999,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1226,8 +1015,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Byte(columnIndex)
+getByte(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getByte(int)
 .
@@ -1235,8 +1023,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1250,8 +1037,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Byte(columnLabel)
+getByte(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getByte(String)
 .
@@ -1259,8 +1045,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1274,8 +1059,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Bytes(columnIndex)
+getBytes(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getBytes(int)
 .
@@ -1283,8 +1067,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1300,8 +1083,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Bytes(columnLabel)
+getBytes(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getBytes(String)
 .
@@ -1309,8 +1091,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1326,8 +1107,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Clob(columnIndex)
+getClob(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getClob(int)
 .
@@ -1335,22 +1115,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-Clob
+JdbcClob
 — The value of the designated column in the current row of this result set as a clob.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Clob(columnLabel)
+getClob(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getClob(String)
 .
@@ -1358,22 +1135,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Clob
+JdbcClob
 — The value of the designated column in the current row of this result set as a clob.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Concurrency()
+getConcurrency()
 For documentation of this method, see
 java.sql.ResultSet#getConcurrency()
 .
@@ -1389,9 +1163,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Cursor
-Name()
+getCursorName()
 For documentation of this method, see
 java.sql.ResultSet#getCursorName()
 .
@@ -1403,8 +1175,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Date(columnIndex)
+getDate(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getDate(int)
 .
@@ -1412,14 +1183,12 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
 Return
-Jdbc
-Date
+JdbcDate
 — The column value;
 null
 if the value was SQL
@@ -1430,8 +1199,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Date(columnIndex, timeZone)
+getDate(columnIndex, timeZone)
 For documentation of this method, see
 java.sql.ResultSet#getDate(int, Calendar)
 .
@@ -1439,13 +1207,11 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
-time
-Zone
+timeZone
 String
 A time zone string used to construct
 java.lang.Calendar
@@ -1465,8 +1231,7 @@ America/Los_Angeles
 GMT+6:30
 ).
 Return
-Jdbc
-Date
+JdbcDate
 — The column value;
 null
 if the value was SQL
@@ -1477,8 +1242,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Date(columnLabel)
+getDate(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getDate(String)
 .
@@ -1486,14 +1250,12 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Date
+JdbcDate
 — The column value;
 null
 if the value was SQL
@@ -1504,8 +1266,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Date(columnLabel, timeZone)
+getDate(columnLabel, timeZone)
 For documentation of this method, see
 java.sql.ResultSet#getDate(String, Calendar)
 .
@@ -1513,13 +1274,11 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
-time
-Zone
+timeZone
 String
 A time zone string used to construct
 java.lang.Calendar
@@ -1539,8 +1298,7 @@ America/Los_Angeles
 GMT+6:30
 ).
 Return
-Jdbc
-Date
+JdbcDate
 — The column value;
 null
 if the value was SQL
@@ -1551,8 +1309,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Double(columnIndex)
+getDouble(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getDouble(int)
 .
@@ -1560,8 +1317,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1575,8 +1331,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Double(columnLabel)
+getDouble(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getDouble(String)
 .
@@ -1584,8 +1339,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1599,9 +1353,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Fetch
-Direction()
+getFetchDirection()
 For documentation of this method, see
 java.sql.ResultSet#getFetchDirection()
 .
@@ -1617,9 +1369,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Fetch
-Size()
+getFetchSize()
 For documentation of this method, see
 java.sql.ResultSet#getFetchSize()
 .
@@ -1631,8 +1381,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Float(columnIndex)
+getFloat(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getFloat(int)
 .
@@ -1640,8 +1389,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1655,8 +1403,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Float(columnLabel)
+getFloat(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getFloat(String)
 .
@@ -1664,8 +1411,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1679,8 +1425,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Holdability()
+getHoldability()
 For documentation of this method, see
 java.sql.ResultSet#getHoldability()
 .
@@ -1696,8 +1441,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Int(columnIndex)
+getInt(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getInt(int)
 .
@@ -1705,8 +1449,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1720,8 +1463,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Int(columnLabel)
+getInt(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getInt(String)
 .
@@ -1729,8 +1471,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1744,8 +1485,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Long(columnIndex)
+getLong(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getLong(int)
 .
@@ -1753,8 +1493,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -1768,8 +1507,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Long(columnLabel)
+getLong(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getLong(String)
 .
@@ -1777,8 +1515,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1792,26 +1529,19 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Meta
-Data()
+getMetaData()
 For documentation of this method, see
 java.sql.ResultSet#getMetaData()
 .
 Return
-Jdbc
-Result
-Set
-Meta
-Data
+JdbcResultSetMetaData
 — The number, types, and properties of this result set's columns.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-NClob(columnIndex)
+getNClob(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getNClob(int)
 .
@@ -1819,22 +1549,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-Clob
+JdbcClob
 — The column value of the current row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-NClob(columnLabel)
+getNClob(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getNClob(String)
 .
@@ -1842,22 +1569,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Clob
+JdbcClob
 — The column value of the current row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-NString(columnIndex)
+getNString(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getNString(int)
 .
@@ -1865,8 +1589,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
@@ -1882,8 +1605,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-NString(columnLabel)
+getNString(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getNString(String)
 .
@@ -1891,8 +1613,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1908,8 +1629,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Object(columnIndex)
+getObject(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getObject(int)
 .
@@ -1917,8 +1637,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
@@ -1930,8 +1649,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Object(columnLabel)
+getObject(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getObject(String)
 .
@@ -1939,8 +1657,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -1952,8 +1669,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Ref(columnIndex)
+getRef(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getRef(int)
 .
@@ -1961,14 +1677,12 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-Ref
+JdbcRef
 — The value of the designated column in the current row of this result set as a
     reference.
 Authorization
@@ -1976,8 +1690,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Ref(columnLabel)
+getRef(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getRef(String)
 .
@@ -1985,14 +1698,12 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Ref
+JdbcRef
 — The value of the designated column in the current row of this result set as a
     reference.
 Authorization
@@ -2000,8 +1711,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Row()
+getRow()
 For documentation of this method, see
 java.sql.ResultSet#getRow()
 .
@@ -2013,9 +1723,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Row
-Id(columnIndex)
+getRowId(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getRowId(int)
 .
@@ -2023,15 +1731,12 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-Row
-Id
+JdbcRowId
 — The column row ID value;
 null
 if the value is SQL
@@ -2042,9 +1747,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Row
-Id(columnLabel)
+getRowId(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getRowId(String)
 .
@@ -2052,15 +1755,12 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Row
-Id
+JdbcRowId
 — The column row ID value;
 null
 if the value is SQL
@@ -2071,8 +1771,182 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-SQLXML(columnIndex)
+getRows(queryString)
+Returns all the rows from this
+ResultSet
+object.
+The
+queryString
+consists of comma-separated calls to getter methods of this
+JdbcResultSet
+, for example:
+"getString(1), getDouble('price'), getDate(3, 'UTC')"
+.
+Supported methods include
+getString
+,
+getInt
+,
+getDouble
+,
+getDate
+, etc. Arguments can be integer column indices (1-based) or single/double quoted string
+column labels.
+Usage: For example, to read column 1 from result set, instead of iterating using
+next()
+, use
+getRows
+, shown in the following examples.
+The following example uses
+next()
+:
+while (rs.next()) {
+  Logger.log(rs.getString(1));
+}
+Use
+getRows()
+for better performance, in the following way:
+var
+rows
+=
+rs
+.
+getRows
+(
+"getString(1)"
+);
+for
+(
+var
+i
+=
+0
+;
+i
+<
+rows
+.
+length
+;
+i
+++
+)
+{
+Logger
+.
+log
+(
+rows
+[
+i
+][
+0
+]
+);
+}
+Note:
+For large results, you can use
+getRows(queryString, batchSize)
+for pagination.
+Parameters
+Name
+Type
+Description
+queryString
+String
+The SQL query string used to generate this result set.
+Return
+Object[][]
+— The current rows from this
+ResultSet
+object.
+Authorization
+Scripts that use this method require authorization with one or more of the following
+scopes
+:
+https://www.googleapis.com/auth/script.external_request
+getRows(queryString, batchSize)
+Returns up to
+batchSize
+rows from this
+ResultSet
+object. Consecutively calling
+this method starts iteration from where it left in previous iteration.
+Usage:
+var
+rows
+;
+do
+{
+rows
+=
+rs
+.
+getRows
+(
+"getString(1)"
+,
+100
+);
+for
+(
+var
+i
+=
+0
+;
+i
+<
+rows
+.
+length
+;
+i
+++
+)
+{
+Logger
+.
+log
+(
+rows
+[
+i
+][
+0
+]
+);
+}
+}
+while
+(
+rows
+.
+length
+>
+0
+);
+Parameters
+Name
+Type
+Description
+queryString
+String
+The SQL query string used to generate this result set.
+batchSize
+Integer
+The maximum number of rows to return in single call.
+Return
+Object[][]
+— The current rows from this
+ResultSet
+object.
+Authorization
+Scripts that use this method require authorization with one or more of the following
+scopes
+:
+https://www.googleapis.com/auth/script.external_request
+getSQLXML(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getSQLXML(int)
 .
@@ -2080,22 +1954,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
 Return
-Jdbc
-SQLXML
+JdbcSQLXML
 — The column value of the current row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-SQLXML(columnLabel)
+getSQLXML(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getSQLXML(String)
 .
@@ -2103,22 +1974,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-SQLXML
+JdbcSQLXML
 — The column value of the current row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Short(columnIndex)
+getShort(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getShort(int)
 .
@@ -2126,8 +1994,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -2141,8 +2008,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Short(columnLabel)
+getShort(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getShort(String)
 .
@@ -2150,8 +2016,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -2165,14 +2030,12 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Statement()
+getStatement()
 For documentation of this method, see
 java.sql.ResultSet#getStatement()
 .
 Return
-Jdbc
-Statement
+JdbcStatement
 — The statement that produced this result set, or
 null
 if the result set was
@@ -2182,8 +2045,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-String(columnIndex)
+getString(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getString(int)
 .
@@ -2191,8 +2053,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
@@ -2208,8 +2069,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-String(columnLabel)
+getString(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getString(String)
 .
@@ -2217,8 +2077,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -2234,8 +2093,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Time(columnIndex)
+getTime(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getTime(int)
 .
@@ -2243,14 +2101,12 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
 Return
-Jdbc
-Time
+JdbcTime
 — The column value;
 null
 if the value was SQL
@@ -2261,8 +2117,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Time(columnIndex, timeZone)
+getTime(columnIndex, timeZone)
 For documentation of this method, see
 java.sql.ResultSet#getTime(int, Calendar)
 .
@@ -2270,13 +2125,11 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
-time
-Zone
+timeZone
 String
 A time zone string used to construct
 java.lang.Calendar
@@ -2296,8 +2149,7 @@ America/Los_Angeles
 GMT+6:30
 ).
 Return
-Jdbc
-Time
+JdbcTime
 — The column value;
 null
 if the value was SQL
@@ -2308,8 +2160,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Time(columnLabel)
+getTime(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getTime(String)
 .
@@ -2317,14 +2168,12 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Time
+JdbcTime
 — The column value;
 null
 if the value was SQL
@@ -2335,8 +2184,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Time(columnLabel, timeZone)
+getTime(columnLabel, timeZone)
 For documentation of this method, see
 java.sql.ResultSet#getTime(String, Calendar)
 .
@@ -2344,13 +2192,11 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
-time
-Zone
+timeZone
 String
 A time zone string used to construct
 java.lang.Calendar
@@ -2370,8 +2216,7 @@ America/Los_Angeles
 GMT+6:30
 ).
 Return
-Jdbc
-Time
+JdbcTime
 — The column value;
 null
 if the value was SQL
@@ -2382,8 +2227,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Timestamp(columnIndex)
+getTimestamp(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(int)
 .
@@ -2391,14 +2235,12 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
 Return
-Jdbc
-Timestamp
+JdbcTimestamp
 — The column value;
 null
 if the value was SQL
@@ -2409,8 +2251,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Timestamp(columnIndex, timeZone)
+getTimestamp(columnIndex, timeZone)
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(int, Calendar)
 .
@@ -2418,13 +2259,11 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve (the first column is 1, the second is 2,
     and so on).
-time
-Zone
+timeZone
 String
 A time zone string used to construct
 java.lang.Calendar
@@ -2444,8 +2283,7 @@ America/Los_Angeles
 GMT+6:30
 ).
 Return
-Jdbc
-Timestamp
+JdbcTimestamp
 — The column value;
 null
 if the value was SQL
@@ -2456,8 +2294,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Timestamp(columnLabel)
+getTimestamp(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(String)
 .
@@ -2465,14 +2302,12 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 Return
-Jdbc
-Timestamp
+JdbcTimestamp
 — The column value;
 null
 if the value was SQL
@@ -2483,8 +2318,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Timestamp(columnLabel, timeZone)
+getTimestamp(columnLabel, timeZone)
 For documentation of this method, see
 java.sql.ResultSet#getTimestamp(String, Calendar)
 .
@@ -2492,13 +2326,11 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
-time
-Zone
+timeZone
 String
 A time zone string used to construct
 java.lang.Calendar
@@ -2518,8 +2350,7 @@ America/Los_Angeles
 GMT+6:30
 ).
 Return
-Jdbc
-Timestamp
+JdbcTimestamp
 — The column value;
 null
 if the value was SQL
@@ -2530,8 +2361,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Type()
+getType()
 For documentation of this method, see
 java.sql.ResultSet#getType()
 .
@@ -2549,8 +2379,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-URL(columnIndex)
+getURL(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#getURL(int)
 .
@@ -2558,8 +2387,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to retrieve the data from (the first column is 1,
     the second is 2, and so on).
@@ -2571,8 +2399,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-URL(columnLabel)
+getURL(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#getURL(String)
 .
@@ -2580,8 +2407,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -2593,8 +2419,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Warnings()
+getWarnings()
 Returns the current set of warnings reported by the driver.
 Return
 String[]
@@ -2604,8 +2429,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-insert
-Row()
+insertRow()
 For documentation of this method, see
 java.sql.ResultSet#insertRow()
 .
@@ -2614,9 +2438,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-After
-Last()
+isAfterLast()
 For documentation of this method, see
 java.sql.ResultSet#isAfterLast()
 .
@@ -2633,9 +2455,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Before
-First()
+isBeforeFirst()
 For documentation of this method, see
 java.sql.ResultSet#isBeforeFirst()
 .
@@ -2652,8 +2472,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Closed()
+isClosed()
 For documentation of this method, see
 java.sql.ResultSet#isClosed()
 .
@@ -2669,8 +2488,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-First()
+isFirst()
 For documentation of this method, see
 java.sql.ResultSet#isFirst()
 .
@@ -2686,8 +2504,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Last()
+isLast()
 For documentation of this method, see
 java.sql.ResultSet#isLast()
 .
@@ -2720,10 +2537,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-move
-To
-Current
-Row()
+moveToCurrentRow()
 For documentation of this method, see
 java.sql.ResultSet#moveToCurrentRow()
 .
@@ -2732,10 +2546,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-move
-To
-Insert
-Row()
+moveToInsertRow()
 For documentation of this method, see
 java.sql.ResultSet#moveToInsertRow()
 .
@@ -2777,8 +2588,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-refresh
-Row()
+refreshRow()
 For documentation of this method, see
 java.sql.ResultSet#refreshRow()
 .
@@ -2811,8 +2621,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-row
-Deleted()
+rowDeleted()
 For documentation of this method, see
 java.sql.ResultSet#rowDeleted()
 .
@@ -2828,8 +2637,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-row
-Inserted()
+rowInserted()
 For documentation of this method, see
 java.sql.ResultSet#rowInserted()
 .
@@ -2845,8 +2653,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-row
-Updated()
+rowUpdated()
 For documentation of this method, see
 java.sql.ResultSet#rowUpdated()
 .
@@ -2862,9 +2669,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-set
-Fetch
-Direction(direction)
+setFetchDirection(direction)
 For documentation of this method, see
 java.sql.ResultSet#setFetchDirection(int)
 .
@@ -2884,9 +2689,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-set
-Fetch
-Size(rows)
+setFetchSize(rows)
 For documentation of this method, see
 java.sql.ResultSet#setFetchSize(int)
 .
@@ -2902,8 +2705,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Array(columnIndex, x)
+updateArray(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateArray(int, Array)
 .
@@ -2911,22 +2713,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Array
+JdbcArray
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Array(columnLabel, x)
+updateArray(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateArray(String, Array)
 .
@@ -2934,23 +2733,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Array
+JdbcArray
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Big
-Decimal(columnIndex, x)
+updateBigDecimal(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBigDecimal(int, BigDecimal)
 .
@@ -2958,23 +2753,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Big
-Number
+BigNumber
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Big
-Decimal(columnLabel, x)
+updateBigDecimal(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBigDecimal(String, BigDecimal)
 .
@@ -2982,22 +2773,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Big
-Number
+BigNumber
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Blob(columnIndex, x)
+updateBlob(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBlob(int, Blob)
 .
@@ -3005,22 +2793,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Blob
+JdbcBlob
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Blob(columnLabel, x)
+updateBlob(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateRef(String, Blob)
 .
@@ -3028,22 +2813,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Blob
+JdbcBlob
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Boolean(columnIndex, x)
+updateBoolean(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBoolean(int, boolean)
 .
@@ -3051,8 +2833,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3064,8 +2845,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Boolean(columnLabel, x)
+updateBoolean(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBoolean(String, boolean)
 .
@@ -3073,8 +2853,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3086,8 +2865,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Byte(columnIndex, x)
+updateByte(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateByte(int, byte)
 .
@@ -3095,8 +2873,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3108,8 +2885,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Byte(columnLabel, x)
+updateByte(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateByte(String, byte)
 .
@@ -3117,8 +2893,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3130,8 +2905,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Bytes(columnIndex, x)
+updateBytes(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBytes(int, byte[])
 .
@@ -3139,8 +2913,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3152,8 +2925,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Bytes(columnLabel, x)
+updateBytes(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateBytes(String, byte[])
 .
@@ -3161,8 +2933,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3174,8 +2945,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Clob(columnIndex, x)
+updateClob(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateClob(int, Clob)
 .
@@ -3183,22 +2953,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Clob
+JdbcClob
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Clob(columnLabel, x)
+updateClob(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateClob(String, Clob)
 .
@@ -3206,22 +2973,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Clob
+JdbcClob
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Date(columnIndex, x)
+updateDate(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateDate(int, Date)
 .
@@ -3229,22 +2993,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Date
+JdbcDate
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Date(columnLabel, x)
+updateDate(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateDate(String, Date)
 .
@@ -3252,22 +3013,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Date
+JdbcDate
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Double(columnIndex, x)
+updateDouble(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateDouble(int, double)
 .
@@ -3275,8 +3033,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3288,8 +3045,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Double(columnLabel, x)
+updateDouble(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateDouble(String, double)
 .
@@ -3297,8 +3053,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3310,8 +3065,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Float(columnIndex, x)
+updateFloat(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateFloat(int, float)
 .
@@ -3319,8 +3073,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3332,8 +3085,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Float(columnLabel, x)
+updateFloat(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateFloat(String, float)
 .
@@ -3341,8 +3093,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3354,8 +3105,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Int(columnIndex, x)
+updateInt(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateInt(int, int)
 .
@@ -3363,8 +3113,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3376,8 +3125,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Int(columnLabel, x)
+updateInt(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateInt(String, int)
 .
@@ -3385,8 +3133,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3398,8 +3145,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Long(columnIndex, x)
+updateLong(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateLong(int, long)
 .
@@ -3407,8 +3153,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3420,8 +3165,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Long(columnLabel, x)
+updateLong(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateLong(String, long)
 .
@@ -3429,8 +3173,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3442,8 +3185,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-NClob(columnIndex, x)
+updateNClob(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateNClob(int, NClob)
 .
@@ -3451,22 +3193,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Clob
+JdbcClob
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-NClob(columnLabel, x)
+updateNClob(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateNClob(String, NClob)
 .
@@ -3474,22 +3213,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Clob
+JdbcClob
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-NString(columnIndex, x)
+updateNString(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateNString(int, String)
 .
@@ -3497,8 +3233,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3510,8 +3245,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-NString(columnLabel, x)
+updateNString(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateNString(String, String)
 .
@@ -3519,8 +3253,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3532,8 +3265,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Null(columnIndex)
+updateNull(columnIndex)
 For documentation of this method, see
 java.sql.ResultSet#updateNull(int)
 .
@@ -3541,8 +3273,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3551,8 +3282,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Null(columnLabel)
+updateNull(columnLabel)
 For documentation of this method, see
 java.sql.ResultSet#updateNull(String)
 .
@@ -3560,8 +3290,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3570,8 +3299,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Object(columnIndex, x)
+updateObject(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateObject(int, Object)
 .
@@ -3579,8 +3307,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3592,8 +3319,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Object(columnIndex, x, scaleOrLength)
+updateObject(columnIndex, x, scaleOrLength)
 For documentation of this method, see
 java.sql.ResultSet#updateObject(int, Object, int)
 .
@@ -3601,25 +3327,20 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
 Object
 The new column value.
-scale
-Or
-Length
+scaleOrLength
 Integer
 The number of digits after the decimal for
-Big
-Decimal
+BigDecimal
 types, or
     the length of data for
-Input
-Stream
+InputStream
 or
 Reader
 types. Ignored for all other
@@ -3629,8 +3350,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Object(columnLabel, x)
+updateObject(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateObject(String, Object)
 .
@@ -3638,8 +3358,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3651,8 +3370,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Object(columnLabel, x, scaleOrLength)
+updateObject(columnLabel, x, scaleOrLength)
 For documentation of this method, see
 java.sql.ResultSet#updateObject(String, Object, int)
 .
@@ -3660,25 +3378,20 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
 Object
 The new column value.
-scale
-Or
-Length
+scaleOrLength
 Integer
 The number of digits after the decimal for
-Big
-Decimal
+BigDecimal
 types, or
     the length of data for
-Input
-Stream
+InputStream
 or
 Reader
 types. Ignored for all other
@@ -3688,8 +3401,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Ref(columnIndex, x)
+updateRef(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateRef(int, Ref)
 .
@@ -3697,22 +3409,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Ref
+JdbcRef
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Ref(columnLabel, x)
+updateRef(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateRef(String, Ref)
 .
@@ -3720,22 +3429,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Ref
+JdbcRef
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Row()
+updateRow()
 For documentation of this method, see
 java.sql.ResultSet#updateRow()
 .
@@ -3744,9 +3450,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Row
-Id(columnIndex, x)
+updateRowId(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateRowId(int, RowId)
 .
@@ -3754,24 +3458,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Row
-Id
+JdbcRowId
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Row
-Id(columnLabel, x)
+updateRowId(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateRowId(String, RowId)
 .
@@ -3779,23 +3478,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Row
-Id
+JdbcRowId
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-SQLXML(columnIndex, x)
+updateSQLXML(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateSQLXML(int, SQLXML)
 .
@@ -3803,22 +3498,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-SQLXML
+JdbcSQLXML
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-SQLXML(columnLabel, x)
+updateSQLXML(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateSQLXML(String, SQLXML)
 .
@@ -3826,22 +3518,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-SQLXML
+JdbcSQLXML
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Short(columnIndex, x)
+updateShort(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateShort(int, short)
 .
@@ -3849,8 +3538,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3862,8 +3550,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Short(columnLabel, x)
+updateShort(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateShort(String, short)
 .
@@ -3871,8 +3558,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3884,8 +3570,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-String(columnIndex, x)
+updateString(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateString(int, String)
 .
@@ -3893,8 +3578,7 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
@@ -3906,8 +3590,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-String(columnLabel, x)
+updateString(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateString(String, String)
 .
@@ -3915,8 +3598,7 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
@@ -3928,8 +3610,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Time(columnIndex, x)
+updateTime(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateTime(int, Time)
 .
@@ -3937,22 +3618,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Time
+JdbcTime
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Time(columnLabel, x)
+updateTime(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateTime(String, Time)
 .
@@ -3960,22 +3638,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Time
+JdbcTime
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Timestamp(columnIndex, x)
+updateTimestamp(columnIndex, x)
 For documentation of this method, see
 java.sql.ResultSet#updateTimestamp(int, Timestamp)
 .
@@ -3983,22 +3658,19 @@ Parameters
 Name
 Type
 Description
-column
-Index
+columnIndex
 Integer
 The index of the column to update (the first column is 1, the second is 2,
     and so on).
 x
-Jdbc
-Timestamp
+JdbcTimestamp
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-update
-Timestamp(columnLabel, x)
+updateTimestamp(columnLabel, x)
 For documentation of this method, see
 java.sql.ResultSet#updateTimestamp(String, Timestamp)
 .
@@ -4006,22 +3678,19 @@ Parameters
 Name
 Type
 Description
-column
-Label
+columnLabel
 String
 The label for the column, specified with the SQL AS clause. If the AS clause
     wasn't specified, then the label is the name of the column.
 x
-Jdbc
-Timestamp
+JdbcTimestamp
 The new column value.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-was
-Null()
+wasNull()
 For documentation of this method, see
 java.sql.ResultSet#wasNull()
 .

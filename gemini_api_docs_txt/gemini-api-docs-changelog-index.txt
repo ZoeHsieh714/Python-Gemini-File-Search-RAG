@@ -1,6 +1,37 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/changelog/index.html
 
 This page documents updates to the Gemini API.
+November 18, 2025
+Launched the first Gemini 3 series model,
+gemini-3-pro-preview
+, our
+state-of-the-art reasoning and multimodal understanding model with powerful
+agentic and coding capabilities.
+In addition to improvements in intelligence and performance,
+Gemini 3 Pro Preview introduces new behavior around:
+Media resolution
+Thought signatures
+Thinking levels
+Read the
+Gemini 3 Developer Guide
+for
+migration, new features, and specs.
+November 11, 2025
+The following models will be deprecated:
+November 12:
+veo-3.0-fast-generate-preview
+veo-3.0-generate-preview
+November 14:
+gemini-2.0-flash-exp-image-generation
+gemini-2.0-flash-preview-image-generation
+November 10, 2025
+The following model is deprecated:
+imagen-3.0-generate-002
+Use
+Imagen 4
+instead. Refer to the
+Gemini deprecations table
+for more details.
 November 6, 2025
 Launched the File Search API to public preview, enabling developers to
 ground responses in their own data. Read the new
@@ -235,6 +266,12 @@ will be redirected to
 gemini-2.5-pro
 on
 June 26, 2025.
+May 27, 2025
+The last available tuning model, Gemini 1.5 Flash 001, has been shutdown.
+Tuning is no longer supported on any models.
+See
+Fine tuning with the Gemini API
+.
 May 20, 2025
 API updates:
 Launched support for

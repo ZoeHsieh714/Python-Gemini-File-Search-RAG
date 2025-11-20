@@ -17,8 +17,7 @@ getSQLTypeName()
 method returns a
 String
 representing the fully-qualified SQL structured type name.
-Jdbc
-Struct
+JdbcStruct
 A JDBC
 Struct
 . For documentation of this class, see
@@ -28,31 +27,25 @@ Methods
 Method
 Return type
 Brief description
-get
-Attributes()
+getAttributes()
 Object[]
 For documentation of this method, see
 java.sql.Struct#getAttributes()
 .
-get
-SQLType
-Name()
+getSQLTypeName()
 String
 For documentation of this method, see
 java.sql.Struct#getSQLTypeName()
 .
 Detailed documentation
-get
-Attributes()
+getAttributes()
 For documentation of this method, see
 java.sql.Struct#getAttributes()
 .
 Return
 Object[]
 — The ordered attribute values of this structure.
-get
-SQLType
-Name()
+getSQLTypeName()
 For documentation of this method, see
 java.sql.Struct#getSQLTypeName()
 .

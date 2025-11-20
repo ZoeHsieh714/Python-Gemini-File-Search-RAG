@@ -10,14 +10,9 @@ methods.
 Each method requires authorization with the
 https://www.googleapis.com/auth/script.external_request
 scope.
-Jdbc
-Parameter
-Meta
-Data
+JdbcParameterMetaData
 A JDBC
-Parameter
-Meta
-Data
+ParameterMetaData
 . For documentation of this class, see
 java.sql.ParameterMetaData
 .
@@ -25,72 +20,53 @@ Methods
 Method
 Return type
 Brief description
-get
-Parameter
-Class
-Name(param)
+getParameterClassName(param)
 String
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterClassName(int)
 .
-get
-Parameter
-Count()
+getParameterCount()
 Integer
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterCount()
 .
-get
-Parameter
-Mode(param)
+getParameterMode(param)
 Integer
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterMode(int)
 .
-get
-Parameter
-Type(param)
+getParameterType(param)
 Integer
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterType(int)
 .
-get
-Parameter
-Type
-Name(param)
+getParameterTypeName(param)
 String
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterTypeName(int)
 .
-get
-Precision(param)
+getPrecision(param)
 Integer
 For documentation of this method, see
 java.sql.ParameterMetaData#getPrecision(int)
 .
-get
-Scale(param)
+getScale(param)
 Integer
 For documentation of this method, see
 java.sql.ParameterMetaData#getScale(int)
 .
-is
-Nullable(param)
+isNullable(param)
 Integer
 For documentation of this method, see
 java.sql.ParameterMetaData#isNullable(int)
 .
-is
-Signed(param)
+isSigned(param)
 Boolean
 For documentation of this method, see
 java.sql.ParameterMetaData#isSigned(int)
 .
 Detailed documentation
-get
-Parameter
-Class
-Name(param)
+getParameterClassName(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterClassName(int)
 .
@@ -104,18 +80,14 @@ The index of the parameter to examine. The first parameter has an index of 1.
 Return
 String
 — The fully-qualified Java class name that is used by the
-Jdbc
-Prepared
-Statement.setObject(index, x)
+JdbcPreparedStatement.setObject(index, x)
 methods.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Parameter
-Count()
+getParameterCount()
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterCount()
 .
@@ -127,9 +99,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Parameter
-Mode(param)
+getParameterMode(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterMode(int)
 .
@@ -156,9 +126,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Parameter
-Type(param)
+getParameterType(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterType(int)
 .
@@ -179,10 +147,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Parameter
-Type
-Name(param)
+getParameterTypeName(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#getParameterTypeName(int)
 .
@@ -202,8 +167,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Precision(param)
+getPrecision(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#getPrecision(int)
 .
@@ -229,8 +193,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Scale(param)
+getScale(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#getScale(int)
 .
@@ -250,8 +213,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Nullable(param)
+isNullable(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#isNullable(int)
 .
@@ -277,8 +239,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Signed(param)
+isSigned(param)
 For documentation of this method, see
 java.sql.ParameterMetaData#isSigned(int)
 .

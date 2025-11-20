@@ -25,8 +25,7 @@ free()
 method releases the resources held by the blob and
 truncate()
 truncates the blob to a specified length.
-Jdbc
-Blob
+JdbcBlob
 A JDBC
 Blob
 . For documentation of this class, see
@@ -41,18 +40,13 @@ void
 For documentation of this method, see
 java.sql.Blob#free()
 .
-get
-Apps
-Script
-Blob()
+getAppsScriptBlob()
 Blob
 Gets the content of this JdbcBlob as an Apps Script blob.
-get
-As(contentType)
+getAs(contentType)
 Blob
 Return the data inside this object as a blob converted to the specified content type.
-get
-Bytes(position, length)
+getBytes(position, length)
 Byte[]
 For documentation of this method, see
 java.sql.Blob#getBytes(long, int)
@@ -72,28 +66,22 @@ Integer
 For documentation of this method, see
 java.sql.Blob#position(blob, long)
 .
-set
-Bytes(position, blobSource)
+setBytes(position, blobSource)
 Integer
 Convenience method for writing a
-Jdbc
-Blob
+JdbcBlob
 to this blob.
-set
-Bytes(position, blobSource, offset, length)
+setBytes(position, blobSource, offset, length)
 Integer
 Convenience method for writing a
-Jdbc
-Blob
+JdbcBlob
 to this blob.
-set
-Bytes(position, bytes)
+setBytes(position, bytes)
 Integer
 For documentation of this method, see
 java.sql.Blob#setBytes(long, byte[])
 .
-set
-Bytes(position, bytes, offset, length)
+setBytes(position, bytes, offset, length)
 Integer
 For documentation of this method, see
 java.sql.Blob#setBytes(long, byte[], int, int)
@@ -108,18 +96,14 @@ free()
 For documentation of this method, see
 java.sql.Blob#free()
 .
-get
-Apps
-Script
-Blob()
+getAppsScriptBlob()
 Gets the content of this JdbcBlob as an Apps Script blob.
 Return
 Blob
 — A
 Blob
 that can be used directly by other Apps Script APIs.
-get
-As(contentType)
+getAs(contentType)
 Return the data inside this object as a blob converted to the specified content type. This
 method adds the appropriate extension to the filename—for example, "myfile.pdf". However, it
 assumes that the part of the filename that follows the last period (if any) is an existing
@@ -134,8 +118,7 @@ Parameters
 Name
 Type
 Description
-content
-Type
+contentType
 String
 The MIME type to convert to. For most blobs,
 'application/pdf'
@@ -155,8 +138,7 @@ is also valid.
 Return
 Blob
 — The data as a blob.
-get
-Bytes(position, length)
+getBytes(position, length)
 For documentation of this method, see
 java.sql.Blob#getBytes(long, int)
 .
@@ -210,11 +192,9 @@ Name
 Type
 Description
 pattern
-Jdbc
-Blob
+JdbcBlob
 The
-Jdbc
-Blob
+JdbcBlob
 indicating the value to search for.
 start
 Integer
@@ -223,11 +203,9 @@ Return
 Integer
 — The position at which the specified pattern begins, or else -1 if the pattern is not
     found.
-set
-Bytes(position, blobSource)
+setBytes(position, blobSource)
 Convenience method for writing a
-Jdbc
-Blob
+JdbcBlob
 to this blob.
 Parameters
 Name
@@ -236,19 +214,15 @@ Description
 position
 Integer
 The position in the blob at which to start writing; the first position is 1.
-blob
-Source
-Blob
-Source
+blobSource
+BlobSource
 The source of data to write to this blob.
 Return
 Integer
 — The number of bytes written.
-set
-Bytes(position, blobSource, offset, length)
+setBytes(position, blobSource, offset, length)
 Convenience method for writing a
-Jdbc
-Blob
+JdbcBlob
 to this blob.
 Parameters
 Name
@@ -257,10 +231,8 @@ Description
 position
 Integer
 The position in the blob at which to start writing; the first position is 1.
-blob
-Source
-Blob
-Source
+blobSource
+BlobSource
 The source of data to write to this blob.
 offset
 Integer
@@ -271,8 +243,7 @@ The number of bytes to write to the blob.
 Return
 Integer
 — The number of bytes written.
-set
-Bytes(position, bytes)
+setBytes(position, bytes)
 For documentation of this method, see
 java.sql.Blob#setBytes(long, byte[])
 .
@@ -289,8 +260,7 @@ The array of bytes to write to this blob.
 Return
 Integer
 — The number of bytes written.
-set
-Bytes(position, bytes, offset, length)
+setBytes(position, bytes, offset, length)
 For documentation of this method, see
 java.sql.Blob#setBytes(long, byte[], int, int)
 .

@@ -1420,6 +1420,20 @@ Otherwise, frames are tokenized at 258 tokens per frame.
 Audio: 32 tokens per second.
 Metadata is also included.
 Total: Approximately 300 tokens per second of video at default media resolution, or 100 tokens per second of video at low media resolution.
+Medial resolution
+: Gemini 3 introduces granular control over multimodal
+vision processing with the
+media_resolution
+parameter. The
+media_resolution
+parameter determines the
+maximum number of tokens allocated per input image or video frame.
+Higher resolutions improve the model's ability to read fine text or identify
+small details, but increase token usage and latency.
+For more details about the parameter and how it can impact token
+calculations, see the
+media resolution
+guide.
 Timestamp format
 : When referring to specific moments in a video within your prompt, use the
 MM:SS

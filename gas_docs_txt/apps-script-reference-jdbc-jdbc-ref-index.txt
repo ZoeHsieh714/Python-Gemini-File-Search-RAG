@@ -9,8 +9,7 @@ It has methods to get the base type name and the referenced object, as well as s
 Detailed documentation for its methods can be found in the
 java.sql.Ref
 class.
-Jdbc
-Ref
+JdbcRef
 A JDBC
 Ref
 . For documentation of this class, see
@@ -20,53 +19,41 @@ Methods
 Method
 Return type
 Brief description
-get
-Base
-Type
-Name()
+getBaseTypeName()
 String
 For documentation of this method, see
 java.sql.Ref#getBaseTypeName()
 .
-get
-Object()
+getObject()
 Object
 For documentation of this method, see
 java.sql.Ref#getObject()
 .
-set
-Object(object)
+setObject(object)
 void
 For documentation of this method, see
 java.sql.Ref#setObject(Object)
 .
 Detailed documentation
-get
-Base
-Type
-Name()
+getBaseTypeName()
 For documentation of this method, see
 java.sql.Ref#getBaseTypeName()
 .
 Return
 String
 — The fully-qualified SQL name of the SQL structured type this
-Jdbc
-Ref
+JdbcRef
 references.
-get
-Object()
+getObject()
 For documentation of this method, see
 java.sql.Ref#getObject()
 .
 Return
 Object
 — The object that this
-Jdbc
-Ref
+JdbcRef
 references.
-set
-Object(object)
+setObject(object)
 For documentation of this method, see
 java.sql.Ref#setObject(Object)
 .

@@ -30,8 +30,7 @@ setTime()
 , and
 setYear()
 .
-Jdbc
-Date
+JdbcDate
 A JDBC
 Date
 . For documentation of this class, see
@@ -51,50 +50,42 @@ Boolean
 For documentation of this method, see
 java.sql.Date#before(date)
 .
-get
-Date()
+getDate()
 Integer
 For documentation of this method, see
 java.sql.Date#getDate()
 .
-get
-Month()
+getMonth()
 Integer
 For documentation of this method, see
 java.sql.Date#getMonth()
 .
-get
-Time()
+getTime()
 Integer
 For documentation of this method, see
 java.sql.Date#getTime()
 .
-get
-Year()
+getYear()
 Integer
 For documentation of this method, see
 java.sql.Date#getYear()
 .
-set
-Date(date)
+setDate(date)
 void
 For documentation of this method, see
 java.sql.Date#setDate(int)
 .
-set
-Month(month)
+setMonth(month)
 void
 For documentation of this method, see
 java.sql.Date#setMonth(int)
 .
-set
-Time(milliseconds)
+setTime(milliseconds)
 void
 For documentation of this method, see
 java.sql.Date#setTime(int)
 .
-set
-Year(year)
+setYear(year)
 void
 For documentation of this method, see
 java.sql.Date#setYear(int)
@@ -109,8 +100,7 @@ Name
 Type
 Description
 when
-Jdbc
-Date
+JdbcDate
 A date to compare to.
 Return
 Boolean
@@ -128,8 +118,7 @@ Name
 Type
 Description
 when
-Jdbc
-Date
+JdbcDate
 A date to compare to.
 Return
 Boolean
@@ -138,16 +127,14 @@ true
 if and only if this date is strictly earlier than the provided date;
 false
 otherwise.
-get
-Date()
+getDate()
 For documentation of this method, see
 java.sql.Date#getDate()
 .
 Return
 Integer
 — The day of the month represented by this date. The value is between 1 and 31.
-get
-Month()
+getMonth()
 For documentation of this method, see
 java.sql.Date#getMonth()
 .
@@ -156,8 +143,7 @@ Integer
 — The number representing the month that contains or begins with the instant in time
     represented by this date. The value returned is between 0 and 11, with the value 0
     representing January.
-get
-Time()
+getTime()
 For documentation of this method, see
 java.sql.Date#getTime()
 .
@@ -165,8 +151,7 @@ Return
 Integer
 — The number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this
     date.
-get
-Year()
+getYear()
 For documentation of this method, see
 java.sql.Date#getYear()
 .
@@ -174,8 +159,7 @@ Return
 Integer
 — The result of subtracting 1900 from the year that contains or begins with the instant
     in time represented by this date, as interpreted in the local time zone.
-set
-Date(date)
+setDate(date)
 For documentation of this method, see
 java.sql.Date#setDate(int)
 .
@@ -188,8 +172,7 @@ Integer
 The day of the month to set. The value is between 1 and 31, modified as needed. For
     example, if the date was April 30, for example, and the date is set to 31, then it is
     treated as if it were on May 1, because April has only 30 days.
-set
-Month(month)
+setMonth(month)
 For documentation of this method, see
 java.sql.Date#setMonth(int)
 .
@@ -201,8 +184,7 @@ month
 Integer
 The month value to set. The value returned is between 0 and 11, with the value 0
     representing January.
-set
-Time(milliseconds)
+setTime(milliseconds)
 For documentation of this method, see
 java.sql.Date#setTime(int)
 .
@@ -215,8 +197,7 @@ Integer
 The number of milliseconds since January 1, 1970, 00:00:00 GMT, not to
     exceed the milliseconds representation for the year 8099. A negative number indicates the
     number of milliseconds before January 1, 1970, 00:00:00 GMT.
-set
-Year(year)
+setYear(year)
 For documentation of this method, see
 java.sql.Date#setYear(int)
 .

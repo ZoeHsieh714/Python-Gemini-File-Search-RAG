@@ -15,8 +15,7 @@ java.sql.Date
 or
 java.sql.Time
 classes in Java.
-Jdbc
-Time
+JdbcTime
 A JDBC
 Time
 . For documentation of this class, see
@@ -36,50 +35,42 @@ Boolean
 For documentation of this method, see
 java.sql.Date#before(Date)
 .
-get
-Hours()
+getHours()
 Integer
 For documentation of this method, see
 java.sql.Date#getHours()
 .
-get
-Minutes()
+getMinutes()
 Integer
 For documentation of this method, see
 java.sql.Date#getMinutes()
 .
-get
-Seconds()
+getSeconds()
 Integer
 For documentation of this method, see
 java.sql.Date#getSeconds()
 .
-get
-Time()
+getTime()
 Integer
 For documentation of this method, see
 java.sql.Date#getTime()
 .
-set
-Hours(hours)
+setHours(hours)
 void
 For documentation of this method, see
 java.sql.Date#setHours(int)
 .
-set
-Minutes(minutes)
+setMinutes(minutes)
 void
 For documentation of this method, see
 java.sql.Date#setMinutes(int)
 .
-set
-Seconds(seconds)
+setSeconds(seconds)
 void
 For documentation of this method, see
 java.sql.Date#setSeconds(int)
 .
-set
-Time(milliseconds)
+setTime(milliseconds)
 void
 For documentation of this method, see
 java.sql.Time#setTime(long)
@@ -94,8 +85,7 @@ Name
 Type
 Description
 when
-Jdbc
-Time
+JdbcTime
 A time to compare to.
 Return
 Boolean
@@ -114,8 +104,7 @@ Name
 Type
 Description
 when
-Jdbc
-Time
+JdbcTime
 A time to compare to.
 Return
 Boolean
@@ -125,8 +114,7 @@ if and only if this time is strictly earlier than the time specified as a
     parameter;
 false
 otherwise.
-get
-Hours()
+getHours()
 For documentation of this method, see
 java.sql.Date#getHours()
 .
@@ -135,8 +123,7 @@ Integer
 — The hour represented by this object; the value is a number (0 through 23) representing
     the hour within the day that contains or begins with the instant in time represented by
     this object, as interpreted in the local time zone.
-get
-Minutes()
+getMinutes()
 For documentation of this method, see
 java.sql.Date#getMinutes()
 .
@@ -144,8 +131,7 @@ Return
 Integer
 — The minutes past the hour represented by this object, as interpreted in the local time
     zone. The value is a number between 0 through 59 inclusive.
-get
-Seconds()
+getSeconds()
 For documentation of this method, see
 java.sql.Date#getSeconds()
 .
@@ -154,8 +140,7 @@ Integer
 — The seconds past the minute represented by this object, as interpreted in the local
     time zone. The value is a number between 0 through 61 inclusive, whiere 60 and 61 are only
     possible for machines that take leap seconds into account.
-get
-Time()
+getTime()
 For documentation of this method, see
 java.sql.Date#getTime()
 .
@@ -163,8 +148,7 @@ Return
 Integer
 — The number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this time
     object.
-set
-Hours(hours)
+setHours(hours)
 For documentation of this method, see
 java.sql.Date#setHours(int)
 .
@@ -177,8 +161,7 @@ Integer
 The hour to set; this object is updated to represent a point in time within the
     specified hour of the day, with the year, month, date, minute, and second the same as
     before, as interpreted in the local time zone.
-set
-Minutes(minutes)
+setMinutes(minutes)
 For documentation of this method, see
 java.sql.Date#setMinutes(int)
 .
@@ -191,8 +174,7 @@ Integer
 The minutes to set; this object is updated to represent a point in time within
     the specified minute of the hour, with the year, month, date, hour, and second the same as
     before, as interpreted in the local time zone.
-set
-Seconds(seconds)
+setSeconds(seconds)
 For documentation of this method, see
 java.sql.Date#setSeconds(int)
 .
@@ -205,8 +187,7 @@ Integer
 The seconds to set; this object is updated to represent a point in time within
     the specified second of the minute, with the year, month, date, hour, and minute the same
     as before, as interpreted in the local time zone.
-set
-Time(milliseconds)
+setTime(milliseconds)
 For documentation of this method, see
 java.sql.Time#setTime(long)
 .

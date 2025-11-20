@@ -21,8 +21,7 @@ java.sql.Timestamp
 and
 java.sql.Date
 classes.
-Jdbc
-Timestamp
+JdbcTimestamp
 A JDBC
 Timestamp
 . For documentation of this class, see
@@ -42,98 +41,82 @@ Boolean
 For documentation of this method, see
 java.sql.Timestamp#before(Timestamp)
 .
-get
-Date()
+getDate()
 Integer
 For documentation of this method, see
 java.sql.Date#getDate()
 .
-get
-Hours()
+getHours()
 Integer
 For documentation of this method, see
 java.sql.Date#getHours()
 .
-get
-Minutes()
+getMinutes()
 Integer
 For documentation of this method, see
 java.sql.Date#getMinutes()
 .
-get
-Month()
+getMonth()
 Integer
 For documentation of this method, see
 java.sql.Date#getMonth()
 .
-get
-Nanos()
+getNanos()
 Integer
 For documentation of this method, see
 java.sql.Timestamp#getNanos()
 .
-get
-Seconds()
+getSeconds()
 Integer
 For documentation of this method, see
 java.sql.Date#getSeconds()
 .
-get
-Time()
+getTime()
 Integer
 For documentation of this method, see
 java.sql.Timestamp#getTime()
 .
-get
-Year()
+getYear()
 Integer
 For documentation of this method, see
 java.sql.Date#getYear()
 .
-set
-Date(date)
+setDate(date)
 void
 For documentation of this method, see
 java.sql.Date#setDate(int)
 .
-set
-Hours(hours)
+setHours(hours)
 void
 For documentation of this method, see
 java.sql.Date#setHours(int)
 .
-set
-Minutes(minutes)
+setMinutes(minutes)
 void
 For documentation of this method, see
 java.sql.Date#setMinutes(int)
 .
-set
-Month(month)
+setMonth(month)
 void
 For documentation of this method, see
 java.sql.Date#setMonth(int)
 .
-set
-Nanos(nanoseconds)
+setNanos(nanoseconds)
 void
 For documentation of this method, see
 java.sql.Timestamp#setNanos(int)
 .
-set
-Seconds(seconds)
+setSeconds(seconds)
 void
 For documentation of this method, see
 java.sql.Date#setSeconds(int)
 .
-set
-Time(milliseconds)
+setTime(milliseconds)
 void
 For documentation of this method, see
 java.sql.Timestamp#setTime(long)
 .
-set
-Year(year)
+setYear(year)
 void
 For documentation of this method, see
 java.sql.Date#setYear(int)
@@ -148,8 +131,7 @@ Name
 Type
 Description
 when
-Jdbc
-Timestamp
+JdbcTimestamp
 A timestamp to compare to.
 Return
 Boolean
@@ -168,8 +150,7 @@ Name
 Type
 Description
 when
-Jdbc
-Timestamp
+JdbcTimestamp
 A timestamp to compare to.
 Return
 Boolean
@@ -179,8 +160,7 @@ if and only if this timestamp is strictly earlier than the timestamp
     specified as a parameter;
 false
 otherwise.
-get
-Date()
+getDate()
 For documentation of this method, see
 java.sql.Date#getDate()
 .
@@ -189,8 +169,7 @@ Integer
 — The day of the month represented by this timestamp. The value returned is between 1 and
     31 representing the day of the month that contains or begins with the instant in time
     represented by this timestamp, as interpreted in the local time zone.
-get
-Hours()
+getHours()
 For documentation of this method, see
 java.sql.Date#getHours()
 .
@@ -199,8 +178,7 @@ Integer
 — The hour represented by this object; the value is a number (0 through 23) representing
     the hour within the day that contains or begins with the instant in time represented by
     this object, as interpreted in the local time zone.
-get
-Minutes()
+getMinutes()
 For documentation of this method, see
 java.sql.Date#getMinutes()
 .
@@ -208,8 +186,7 @@ Return
 Integer
 — The minutes past the hour represented by this object, as interpreted in the local time
     zone. The value is a number between 0 through 59 inclusive.
-get
-Month()
+getMonth()
 For documentation of this method, see
 java.sql.Date#getMonth()
 .
@@ -217,16 +194,14 @@ Return
 Integer
 — The month that contains or begins with the instant in time represented by this
     timestamp. The value returned is between 0 and 11, with the value 0 representing January.
-get
-Nanos()
+getNanos()
 For documentation of this method, see
 java.sql.Timestamp#getNanos()
 .
 Return
 Integer
 — This timestamp's fractional seconds value (nanoseconds).
-get
-Seconds()
+getSeconds()
 For documentation of this method, see
 java.sql.Date#getSeconds()
 .
@@ -235,8 +210,7 @@ Integer
 — The seconds past the minute represented by this object, as interpreted in the local
     time zone. The value is a number between 0 through 61 inclusive, whiere 60 and 61 are only
     possible for machines that take leap seconds into account.
-get
-Time()
+getTime()
 For documentation of this method, see
 java.sql.Timestamp#getTime()
 .
@@ -244,8 +218,7 @@ Return
 Integer
 — The number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this time
     object.
-get
-Year()
+getYear()
 For documentation of this method, see
 java.sql.Date#getYear()
 .
@@ -254,8 +227,7 @@ Integer
 — A value that is the result of subtracting 1900 from the year that contains or begins
     with the instant in time represented by this timestampe, as interpreted in the local time
     zone.
-set
-Date(date)
+setDate(date)
 For documentation of this method, see
 java.sql.Date#setDate(int)
 .
@@ -270,8 +242,7 @@ The day of month to set. This timestamp is updated to represent a point in time
     as before, as interpreted in the local time zone. If the date was April 30, for example,
     and the date is set to 31, then it is treated as if it were on May 1, because April has
     only 30 days.
-set
-Hours(hours)
+setHours(hours)
 For documentation of this method, see
 java.sql.Date#setHours(int)
 .
@@ -284,8 +255,7 @@ Integer
 The hour to set; this object is updated to represent a point in time within the
     specified hour of the day, with the year, month, date, minute, and second the same as
     before, as interpreted in the local time zone.
-set
-Minutes(minutes)
+setMinutes(minutes)
 For documentation of this method, see
 java.sql.Date#setMinutes(int)
 .
@@ -298,8 +268,7 @@ Integer
 The minutes to set; this object is updated to represent a point in time within
     the specified minute of the hour, with the year, month, date, hour, and second the same as
     before, as interpreted in the local time zone.
-set
-Month(month)
+setMonth(month)
 For documentation of this method, see
 java.sql.Date#setMonth(int)
 .
@@ -314,8 +283,7 @@ The month to set. This timestamp is updated to represent a point in time within
     interpreted in the local time zone. If the date was October 31, for example, and the month
     is set to June, then the new date is treated as if it were on July 1, because June has only
     30 days.
-set
-Nanos(nanoseconds)
+setNanos(nanoseconds)
 For documentation of this method, see
 java.sql.Timestamp#setNanos(int)
 .
@@ -326,8 +294,7 @@ Description
 nanoseconds
 Integer
 The new fractional seconds value.
-set
-Seconds(seconds)
+setSeconds(seconds)
 For documentation of this method, see
 java.sql.Date#setSeconds(int)
 .
@@ -340,8 +307,7 @@ Integer
 The seconds to set; this object is updated to represent a point in time within
     the specified second of the minute, with the year, month, date, hour, and minute the same
     as before, as interpreted in the local time zone.
-set
-Time(milliseconds)
+setTime(milliseconds)
 For documentation of this method, see
 java.sql.Timestamp#setTime(long)
 .
@@ -353,8 +319,7 @@ milliseconds
 Integer
 The time value to set. The value is milliseconds since January 1, 1970,
     00:00:00 GMT.
-set
-Year(year)
+setYear(year)
 For documentation of this method, see
 java.sql.Date#setYear(int)
 .

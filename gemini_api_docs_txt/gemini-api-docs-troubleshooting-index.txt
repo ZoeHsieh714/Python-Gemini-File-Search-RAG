@@ -133,6 +133,11 @@ Recitation issue
 If you see the model stops generating output due to the RECITATION reason, this
 means the model output may resemble certain data. To fix this, try to make
 prompt / context as unique as possible and use a higher temperature.
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 Repetitive tokens issue
 If you see repeated output tokens, try the following suggestions to help
 reduce or eliminate them.

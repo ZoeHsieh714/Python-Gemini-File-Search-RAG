@@ -19,7 +19,7 @@ For production applications that require higher volumes and advanced features.
 check_circle
 Higher rate limits for production deployments
 check_circle
-Access to Context Caching
+Access to Context caching
 check_circle
 Batch API (50% cost reduction)
 check_circle
@@ -43,8 +43,63 @@ Provisioned throughput
 check_circle
 Volume-based discounts (based on usage)
 check_circle
-ML Ops, Model garden and more
+ML ops, model garden and more
 Contact Sales
+Gemini 3 Pro Preview
+gemini-3-pro-preview
+Try it in Google AI Studio
+The best model in the world for multimodal understanding, and our most powerful
+agentic and vibe-coding model yet.
+Standard
+Free Tier
+Paid Tier, per 1M tokens in USD
+Input price
+Not available
+$2.00, prompts <= 200k tokens
+$4.00, prompts > 200k tokens
+Output price (including thinking tokens)
+Not available
+$12.00, prompts <= 200k tokens
+$18.00, prompts > 200k
+Context caching price
+Not available
+$0.20, prompts <= 200k tokens
+$0.40, prompts > 200k
+$4.50 / 1,000,000 tokens per hour (storage price)
+Grounding with Google Search
+Not available
+1,500 RPD (free), then (Coming soon) $14 / 1,000 search queries
+Grounding with Google Maps
+Not available
+Not available
+Used to improve our products
+Yes
+No
+Batch
+Free Tier
+Paid Tier, per 1M tokens in USD
+Input price
+Not available
+$1.00, prompts <= 200k tokens
+$2.00, prompts > 200k tokens
+Output price (including thinking tokens)
+Not available
+$6.00, prompts <= 200k tokens
+$9.00, prompts > 200k
+Context caching price
+Not available
+$0.20, prompts <= 200k tokens
+$0.40, prompts > 200k
+$4.50 / 1,000,000 tokens per hour (storage price)
+Grounding with Google Search
+Not available
+1,500 RPD (free), then (Coming soon) $14 / 1,000 search queries
+Grounding with Google Maps
+Not available
+Not available
+Used to improve our products
+Yes
+No
 Gemini 2.5 Pro
 gemini-2.5-pro
 Try it in Google AI Studio
@@ -330,7 +385,7 @@ gemini-2.0-flash-live-001
 : Input $0.35 (text), $2.10 (audio / image / video),
 Output: $1.50 (text), $8.50 (audio)
 These models will be deprecated soon.
-Gemini 2.5 Flash Image
+Gemini 2.5 Flash Image 🍌
 gemini-2.5-flash-image
 Try it in Google AI Studio
 Our native image generation model, optimized for speed, flexibility, and
@@ -723,7 +778,6 @@ Used to improve our products
 Yes
 No
 Gemma 3
-Try Gemma 3
 Our lightweight, state-of the art, open model built from the same technology
 that powers our Gemini models.
 Free Tier
@@ -750,7 +804,6 @@ Used to improve our products
 Yes
 No
 Gemma 3n
-Try Gemma 3n
 Our open model built for efficient performance on everyday devices like mobile
 phones, laptops, and tablets.
 Free Tier
@@ -776,6 +829,42 @@ Not available
 Used to improve our products
 Yes
 No
+Pricing for Tools
+Tools are priced at their own rates, applied to the model using them.
+Check the
+Models
+page for which tools are available
+to each model.
+Free Tier
+Paid Tier, per 1M tokens in USD
+Google Search
+500 RPD free (limit shared for Flash and Flash-Lite).
+Not available for Pro.
+1,500 RPD free (limit shared for Flash and Flash-Lite).
+Then $35 / 1,000 grounded prompts
+Google Maps
+500 RPD
+Not available for Pro.
+1,500 RPD free (limit shared for Flash and Flash-Lite)
+10,000 RPD free for Pro.
+Then $25 / 1,000 grounded prompts
+Code execution
+Free of charge
+Free of charge
+URL context
+Free of charge
+Charged as input tokens per model pricing.
+Computer use
+Not available
+See
+Gemini 2.5 Computer Use Preview
+pricing table.
+File search
+Free of charge
+Charged for
+embeddings
+at $0.15 / 1M tokens.
+Retrieved document tokens charged as regular tokens per model pricing.
 [*] Google AI Studio usage is free of charge in all
 available regions
 .

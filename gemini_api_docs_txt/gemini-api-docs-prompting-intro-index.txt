@@ -5,6 +5,10 @@ is the process of creating prompts, or natural language requests,
 that elicit accurate, high quality responses from a language model.
 This page introduces basic concepts, strategies, and best practices to get you
 started designing prompts to get the most out of Gemini AI models.
+Note:
+Prompt engineering is iterative. These guidelines and templates are
+starting points. Experiment and refine based on your specific use cases and
+observed model responses.
 Topic-specific prompt guides
 Looking for more specific prompt strategies? Check out our other prompting guides
 on:
@@ -405,6 +409,12 @@ for prompts that require a more deterministic or less open-ended response,
 while higher temperatures can lead to more diverse or creative results. A
 temperature of 0 is deterministic, meaning that the highest probability
 response is always selected.
+Note:
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 topK
 :
 The
@@ -548,6 +558,238 @@ If the model responds with a fallback response, try increasing the temperature.
 Things to avoid
 Avoid relying on models to generate factual information.
 Use with care on math and logic problems.
+Gemini 3
+Gemini 3 models are designed for advanced reasoning and instruction following.
+They respond best to prompts that are direct, well-structured, and clearly
+define the task and any constraints. The following practices are recommended for
+optimal results with Gemini 3:
+Core prompting principles
+Be precise and direct:
+State your goal clearly and concisely. Avoid
+unnecessary or overly persuasive language.
+Use consistent structure:
+Employ clear delimiters to separate different
+parts of your prompt. XML-style tags (e.g.,
+<context>
+,
+<task>
+) or
+Markdown headings are effective. Choose one format and use it consistently
+within a single prompt.
+Define parameters:
+Explicitly explain any ambiguous terms or parameters.
+Control output verbosity:
+By default, Gemini 3 provides direct and
+efficient answers. If you need a more conversational or detailed response,
+you must explicitly request it in your instructions.
+Handle multimodal inputs coherently:
+When using text, images, audio, or
+video, treat them as equal-class inputs. Ensure your instructions clearly
+reference each modality as needed.
+Prioritize critical instructions:
+Place essential behavioral
+constraints, role definitions (persona), and output format requirements in
+the System Instruction or at the very beginning of the user prompt.
+Structure for long contexts:
+When providing large amounts of context
+(e.g., documents, code), supply all the context first. Place your specific
+instructions or questions at the very
+end
+of the prompt.
+Anchor context:
+After a large block of data, use a clear transition
+phrase to bridge the context and your query, such as "Based on the
+information above..."
+Enhancing reasoning and planning
+You can leverage Gemini 3's advanced thinking capabilities to improve its
+response quality for complex tasks by prompting it to plan or
+self-critique before providing the final response.
+Example - Explicit planning:
+Before providing the final answer, please:
+1. Parse the stated goal into distinct sub-tasks.
+2. Check if the input information is complete.
+3. Create a structured outline to achieve the goal.
+Example - Self-critique:
+Before returning your final response, review your generated output against the user's original constraints.
+1. Did I answer the user's *intent*, not just their literal words?
+2. Is the tone authentic to the requested persona?
+Structured prompting examples
+Using tags or Markdown helps the model distinguish between instructions,
+context, and tasks.
+XML example:
+<role>
+You
+are
+a
+helpful
+assistant.
+</role>
+
+<constraints>
+1.
+Be
+objective.
+2.
+Cite
+sources.
+</constraints>
+
+<context>
+[Insert
+User
+Input
+Here
+-
+The
+model
+knows
+this
+is
+data,
+not
+instructions]
+</context>
+
+<task>
+[Insert
+the
+specific
+user
+request
+here]
+</task>
+Markdown example:
+# Identity
+You are a senior solution architect.
+# Constraints
+-
+No external libraries allowed.
+-
+Python 3.11+ syntax only.
+# Output format
+Return a single code block.
+Example template combining best practices
+This template captures the core principles for prompting with Gemini 3. Always
+make sure to iterate and modify for your specific use case.
+System Instruction:
+<role>
+You
+are
+Gemini
+3,
+a
+specialized
+assistant
+for
+[Insert
+Domain,
+e.g.,
+Data
+Science].
+You
+are
+precise,
+analytical,
+and
+persistent.
+</role>
+
+<instructions>
+1.
+**Plan**:
+Analyze
+the
+task
+and
+create
+a
+step-by-step
+plan.
+2.
+**Execute**:
+Carry
+out
+the
+plan.
+3.
+**Validate**:
+Review
+your
+output
+against
+the
+user's
+task.
+4.
+**Format**:
+Present
+the
+final
+answer
+in
+the
+requested
+structure.
+</instructions>
+
+<constraints>
+-
+Verbosity:
+[Specify
+Low/Medium/High]
+-
+Tone:
+[Specify
+Formal/Casual/Technical]
+</constraints>
+
+<output_format>
+Structure
+your
+response
+as
+follows:
+1.
+**Executive
+Summary**:
+[Short
+overview]
+2.
+**Detailed
+Response**:
+[The
+main
+content]
+</output_format>
+User Prompt:
+<context>
+[Insert
+relevant
+documents,
+code
+snippets,
+or
+background
+info
+here]
+</context>
+
+<task>
+[Insert
+specific
+user
+request
+here]
+</task>
+
+<final_instruction>
+Remember
+to
+think
+step-by-step
+before
+answering.
+</final_instruction>
 Generative models under the hood
 This section aims to answer the question -
 Is there randomness in generative
@@ -575,12 +817,16 @@ randomness allowed in this decoding process by setting the temperature. A
 temperature of 0 means only the most likely tokens are selected, and there's no
 randomness. Conversely, a high temperature injects a high degree of randomness
 into the tokens selected by the model, leading to more unexpected, surprising
-model responses.
+model responses. For
+Gemini 3
+, it's recommended to not change the default
+temperature of 1.0 to avoid unexpected outcomes.
 Next steps
 Now that you have a deeper understanding of prompt design, try writing your
 own prompts using
 Google AI Studio
 .
+Learn more about the Gemini 3 Pro Preview model.
 To learn about multimodal prompting, see
 Prompting with media files
 .

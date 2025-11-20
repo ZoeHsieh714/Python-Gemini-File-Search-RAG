@@ -11,16 +11,9 @@ java.sql.ResultSetMetaData
 Most methods require authorization with the
 https://www.googleapis.com/auth/script.external_request
 scope.
-Jdbc
-Result
-Set
-Meta
-Data
+JdbcResultSetMetaData
 A JDBC
-Result
-Set
-Meta
-Data
+ResultSetMetaData
 . For documentation of this class, see
 java.sql.ResultSetMetaData
 .
@@ -28,153 +21,113 @@ Methods
 Method
 Return type
 Brief description
-get
-Catalog
-Name(column)
+getCatalogName(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getCatalogName(int)
 .
-get
-Column
-Class
-Name(column)
+getColumnClassName(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnClassName(int)
 .
-get
-Column
-Count()
+getColumnCount()
 Integer
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnCount()
 .
-get
-Column
-Display
-Size(column)
+getColumnDisplaySize(column)
 Integer
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnDisplaySize(int)
 .
-get
-Column
-Label(column)
+getColumnLabel(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnLabel(int)
 .
-get
-Column
-Name(column)
+getColumnName(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnName(int)
 .
-get
-Column
-Type(column)
+getColumnType(column)
 Integer
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnType(int)
 .
-get
-Column
-Type
-Name(column)
+getColumnTypeName(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnTypeName(int)
 .
-get
-Precision(column)
+getPrecision(column)
 Integer
 For documentation of this method, see
 java.sql.ResultSetMetaData#getPrecision(int)
 .
-get
-Scale(column)
+getScale(column)
 Integer
 For documentation of this method, see
 java.sql.ResultSetMetaData#getScale(int)
 .
-get
-Schema
-Name(column)
+getSchemaName(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getSchemaName(int)
 .
-get
-Table
-Name(column)
+getTableName(column)
 String
 For documentation of this method, see
 java.sql.ResultSetMetaData#getTableName(int)
 .
-is
-Auto
-Increment(column)
+isAutoIncrement(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isAutoIncrement(int)
 .
-is
-Case
-Sensitive(column)
+isCaseSensitive(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isCaseSensitive(int)
 .
-is
-Currency(column)
+isCurrency(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isCurrency(int)
 .
-is
-Definitely
-Writable(column)
+isDefinitelyWritable(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isDefinitelyWritable(int)
 .
-is
-Nullable(column)
+isNullable(column)
 Integer
 For documentation of this method, see
 java.sql.ResultSetMetaData#isNullable(int)
 .
-is
-Read
-Only(column)
+isReadOnly(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isReadOnly(int)
 .
-is
-Searchable(column)
+isSearchable(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isSearchable(int)
 .
-is
-Signed(column)
+isSigned(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isSigned(int)
 .
-is
-Writable(column)
+isWritable(column)
 Boolean
 For documentation of this method, see
 java.sql.ResultSetMetaData#isWritable(int)
 .
 Detailed documentation
-get
-Catalog
-Name(column)
+getCatalogName(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getCatalogName(int)
 .
@@ -195,10 +148,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Class
-Name(column)
+getColumnClassName(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnClassName(int)
 .
@@ -218,9 +168,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Count()
+getColumnCount()
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnCount()
 .
@@ -232,10 +180,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Display
-Size(column)
+getColumnDisplaySize(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnDisplaySize(int)
 .
@@ -255,9 +200,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Label(column)
+getColumnLabel(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnLabel(int)
 .
@@ -275,9 +218,7 @@ String
 AS
 clause.
     Returns the same as
-get
-Column
-Name(column)
+getColumnName(column)
 if an
 AS
 is not specified.
@@ -286,9 +227,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Name(column)
+getColumnName(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnName(int)
 .
@@ -308,9 +247,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Type(column)
+getColumnType(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnType(int)
 .
@@ -333,10 +270,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Type
-Name(column)
+getColumnTypeName(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getColumnTypeName(int)
 .
@@ -357,8 +291,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Precision(column)
+getPrecision(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getPrecision(int)
 .
@@ -385,8 +318,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Scale(column)
+getScale(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getScale(int)
 .
@@ -407,9 +339,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Schema
-Name(column)
+getSchemaName(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getSchemaName(int)
 .
@@ -429,9 +359,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Table
-Name(column)
+getTableName(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#getTableName(int)
 .
@@ -451,9 +379,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Auto
-Increment(column)
+isAutoIncrement(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isAutoIncrement(int)
 .
@@ -477,9 +403,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Case
-Sensitive(column)
+isCaseSensitive(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isCaseSensitive(int)
 .
@@ -503,8 +427,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Currency(column)
+isCurrency(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isCurrency(int)
 .
@@ -528,9 +451,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Definitely
-Writable(column)
+isDefinitelyWritable(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isDefinitelyWritable(int)
 .
@@ -554,8 +475,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Nullable(column)
+isNullable(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isNullable(int)
 .
@@ -581,9 +501,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Read
-Only(column)
+isReadOnly(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isReadOnly(int)
 .
@@ -607,8 +525,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Searchable(column)
+isSearchable(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isSearchable(int)
 .
@@ -632,8 +549,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Signed(column)
+isSigned(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isSigned(int)
 .
@@ -657,8 +573,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Writable(column)
+isWritable(column)
 For documentation of this method, see
 java.sql.ResultSetMetaData#isWritable(int)
 .

@@ -16,10 +16,7 @@ class and generally require
 https://www.googleapis.com/auth/script.external_request
 authorization.
 Numerous methods check for database support of specific features, such as different result set types, savepoints, schema inclusion in statements, subqueries, transactions, and UNION operations.
-Jdbc
-Database
-Meta
-Data
+JdbcDatabaseMetaData
 A JDBC database metadata object. For documentation of this class, see
 java.sql.DatabaseMetaData
 .
@@ -27,1409 +24,869 @@ Methods
 Method
 Return type
 Brief description
-all
-Procedures
-Are
-Callable()
+allProceduresAreCallable()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#allProceduresAreCallable()
 .
-all
-Tables
-Are
-Selectable()
+allTablesAreSelectable()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#allTablesAreSelectable()
 .
-auto
-Commit
-Failure
-Closes
-All
-Result
-Sets()
+autoCommitFailureClosesAllResultSets()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#autoCommitFailureClosesAllResultSets()
 .
-data
-Definition
-Causes
-Transaction
-Commit()
+dataDefinitionCausesTransactionCommit()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#dataDefinitionCausesTransactionCommit()
 .
-data
-Definition
-Ignored
-In
-Transactions()
+dataDefinitionIgnoredInTransactions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#dataDefinitionIgnoredInTransactions()
 .
-deletes
-Are
-Detected(type)
+deletesAreDetected(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#deletesAreDetected(int)
 .
-does
-Max
-Row
-Size
-Include
-Blobs()
+doesMaxRowSizeIncludeBlobs()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#doesMaxRowSizeIncludeBlobs()
 .
-get
-Attributes(catalog, schemaPattern, typeNamePattern, attributeNamePattern)
-Jdbc
-Result
-Set
+getAttributes(catalog, schemaPattern, typeNamePattern, attributeNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getAttributes(String, String, String, String)
 .
-get
-Best
-Row
-Identifier(catalog, schema, table, scope, nullable)
-Jdbc
-Result
-Set
+getBestRowIdentifier(catalog, schema, table, scope, nullable)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getBestRowIdentifier(String, String, String, int, boolean)
 .
-get
-Catalog
-Separator()
+getCatalogSeparator()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCatalogSeparator()
 .
-get
-Catalog
-Term()
+getCatalogTerm()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCatalogTerm()
 .
-get
-Catalogs()
-Jdbc
-Result
-Set
+getCatalogs()
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCatalogs()
 .
-get
-Client
-Info
-Properties()
-Jdbc
-Result
-Set
+getClientInfoProperties()
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getClientInfoProperties()
 .
-get
-Column
-Privileges(catalog, schema, table, columnNamePattern)
-Jdbc
-Result
-Set
+getColumnPrivileges(catalog, schema, table, columnNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getColumnPrivileges(String, String, String, String)
 .
-get
-Columns(catalog, schemaPattern, tableNamePattern, columnNamePattern)
-Jdbc
-Result
-Set
+getColumns(catalog, schemaPattern, tableNamePattern, columnNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getColumns(String, String, String, String)
 .
-get
-Connection()
-Jdbc
-Connection
+getConnection()
+JdbcConnection
 For documentation of this method, see
 java.sql.DatabaseMetaData#getConnection()
 .
-get
-Cross
-Reference(parentCatalog, parentSchema, parentTable, foreignCatalog, foreignSchema, foreignTable)
-Jdbc
-Result
-Set
+getCrossReference(parentCatalog, parentSchema, parentTable, foreignCatalog, foreignSchema, foreignTable)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCrossReference(String, String, String,
      String, String, String)
 .
-get
-Database
-Major
-Version()
+getDatabaseMajorVersion()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseMajorVersion()
 .
-get
-Database
-Minor
-Version()
+getDatabaseMinorVersion()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseMinorVersion()
 .
-get
-Database
-Product
-Name()
+getDatabaseProductName()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseProductName()
 .
-get
-Database
-Product
-Version()
+getDatabaseProductVersion()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseProductVersion()
 .
-get
-Default
-Transaction
-Isolation()
+getDefaultTransactionIsolation()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDefaultTransactionIsolation()
 .
-get
-Driver
-Major
-Version()
+getDriverMajorVersion()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverMajorVersion()
 .
-get
-Driver
-Minor
-Version()
+getDriverMinorVersion()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverMinorVersion()
 .
-get
-Driver
-Name()
+getDriverName()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverName()
 .
-get
-Driver
-Version()
+getDriverVersion()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverVersion()
 .
-get
-Exported
-Keys(catalog, schema, table)
-Jdbc
-Result
-Set
+getExportedKeys(catalog, schema, table)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getImportedKeys(String, String, String)
 .
-get
-Extra
-Name
-Characters()
+getExtraNameCharacters()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getExtraNameCharacters()
 .
-get
-Function
-Columns(catalog, schemaPattern, functionNamePattern, columnNamePattern)
-Jdbc
-Result
-Set
+getFunctionColumns(catalog, schemaPattern, functionNamePattern, columnNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getFunctionColumns(String, String, String, String)
 .
-get
-Functions(catalog, schemaPattern, functionNamePattern)
-Jdbc
-Result
-Set
+getFunctions(catalog, schemaPattern, functionNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getFunctions(String, String, String)
 .
-get
-Identifier
-Quote
-String()
+getIdentifierQuoteString()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getIdentifierQuoteString()
 .
-get
-Imported
-Keys(catalog, schema, table)
-Jdbc
-Result
-Set
+getImportedKeys(catalog, schema, table)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getImportedKeys(String, String, String)
 .
-get
-Index
-Info(catalog, schema, table, unique, approximate)
-Jdbc
-Result
-Set
+getIndexInfo(catalog, schema, table, unique, approximate)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getIndexInfo(String, String, String, boolean, boolean)
 .
-get
-JDBCMajor
-Version()
+getJDBCMajorVersion()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getJDBCMajorVersion()
 .
-get
-JDBCMinor
-Version()
+getJDBCMinorVersion()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getJDBCMinorVersion()
 .
-get
-Max
-Binary
-Literal
-Length()
+getMaxBinaryLiteralLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxBinaryLiteralLength()
 .
-get
-Max
-Catalog
-Name
-Length()
+getMaxCatalogNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxCatalogNameLength()
 .
-get
-Max
-Char
-Literal
-Length()
+getMaxCharLiteralLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxCharLiteralLength()
 .
-get
-Max
-Column
-Name
-Length()
+getMaxColumnNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnNameLength()
 .
-get
-Max
-Columns
-In
-Group
-By()
+getMaxColumnsInGroupBy()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInGroupBy()
 .
-get
-Max
-Columns
-In
-Index()
+getMaxColumnsInIndex()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInIndex()
 .
-get
-Max
-Columns
-In
-Order
-By()
+getMaxColumnsInOrderBy()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInOrderBy()
 .
-get
-Max
-Columns
-In
-Select()
+getMaxColumnsInSelect()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInSelect()
 .
-get
-Max
-Columns
-In
-Table()
+getMaxColumnsInTable()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInTable()
 .
-get
-Max
-Connections()
+getMaxConnections()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxConnections()
 .
-get
-Max
-Cursor
-Name
-Length()
+getMaxCursorNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxCursorNameLength()
 .
-get
-Max
-Index
-Length()
+getMaxIndexLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxIndexLength()
 .
-get
-Max
-Procedure
-Name
-Length()
+getMaxProcedureNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxProcedureNameLength()
 .
-get
-Max
-Row
-Size()
+getMaxRowSize()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxRowSize()
 .
-get
-Max
-Schema
-Name
-Length()
+getMaxSchemaNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxSchemaNameLength()
 .
-get
-Max
-Statement
-Length()
+getMaxStatementLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxStatementLength()
 .
-get
-Max
-Statements()
+getMaxStatements()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxStatements()
 .
-get
-Max
-Table
-Name
-Length()
+getMaxTableNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxTableNameLength()
 .
-get
-Max
-Tables
-In
-Select()
+getMaxTablesInSelect()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxTablesInSelect()
 .
-get
-Max
-User
-Name
-Length()
+getMaxUserNameLength()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxUserNameLength()
 .
-get
-Numeric
-Functions()
+getNumericFunctions()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getNumericFunctions()
 .
-get
-Primary
-Keys(catalog, schema, table)
-Jdbc
-Result
-Set
+getPrimaryKeys(catalog, schema, table)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getPrimaryKeys(String, String, String)
 .
-get
-Procedure
-Columns(catalog, schemaPattern, procedureNamePattern, columnNamePattern)
-Jdbc
-Result
-Set
+getProcedureColumns(catalog, schemaPattern, procedureNamePattern, columnNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getProcedureColumns(String, String, String, String)
 .
-get
-Procedure
-Term()
+getProcedureTerm()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getProcedureTerm()
 .
-get
-Procedures(catalog, schemaPattern, procedureNamePattern)
-Jdbc
-Result
-Set
+getProcedures(catalog, schemaPattern, procedureNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getProcedures(String, String, String)
 .
-get
-Result
-Set
-Holdability()
+getResultSetHoldability()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getResultSetHoldability()
 .
-get
-Row
-Id
-Lifetime()
+getRowIdLifetime()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getRowIdLifetime()
 .
-get
-SQLKeywords()
+getSQLKeywords()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSQLKeywords()
 .
-get
-SQLState
-Type()
+getSQLStateType()
 Integer
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSQLStateType()
 .
-get
-Schema
-Term()
+getSchemaTerm()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSchemaTerm()
 .
-get
-Schemas()
-Jdbc
-Result
-Set
+getSchemas()
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSchemas()
 .
-get
-Schemas(catalog, schemaPattern)
-Jdbc
-Result
-Set
+getSchemas(catalog, schemaPattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSchemas()
 .
-get
-Search
-String
-Escape()
+getSearchStringEscape()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSearchStringEscape()
 .
-get
-String
-Functions()
+getStringFunctions()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getStringFunctions()
 .
-get
-Super
-Tables(catalog, schemaPattern, tableNamePattern)
-Jdbc
-Result
-Set
+getSuperTables(catalog, schemaPattern, tableNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSuperTables(String, String,String)
 .
-get
-Super
-Types(catalog, schemaPattern, typeNamePattern)
-Jdbc
-Result
-Set
+getSuperTypes(catalog, schemaPattern, typeNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSuperTypes(String, String, String)
 .
-get
-System
-Functions()
+getSystemFunctions()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSystemFunctions()
 .
-get
-Table
-Privileges(catalog, schemaPattern, tableNamePattern)
-Jdbc
-Result
-Set
+getTablePrivileges(catalog, schemaPattern, tableNamePattern)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTablePrivileges(String, String, String)
 .
-get
-Table
-Types()
-Jdbc
-Result
-Set
+getTableTypes()
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTableTypes()
 .
-get
-Tables(catalog, schemaPattern, tableNamePattern, types)
-Jdbc
-Result
-Set
+getTables(catalog, schemaPattern, tableNamePattern, types)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTables(String, String, String, String[])
 .
-get
-Time
-Date
-Functions()
+getTimeDateFunctions()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTimeDateFunctions()
 .
-get
-Type
-Info()
-Jdbc
-Result
-Set
+getTypeInfo()
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTypeInfo()
 .
-get
-UDTs(catalog, schemaPattern, typeNamePattern, types)
-Jdbc
-Result
-Set
+getUDTs(catalog, schemaPattern, typeNamePattern, types)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getUDTs(String, String, String, int[])
 .
-get
-URL()
+getURL()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getURL()
 .
-get
-User
-Name()
+getUserName()
 String
 For documentation of this method, see
 java.sql.DatabaseMetaData#getUserName()
 .
-get
-Version
-Columns(catalog, schema, table)
-Jdbc
-Result
-Set
+getVersionColumns(catalog, schema, table)
+JdbcResultSet
 For documentation of this method, see
 java.sql.DatabaseMetaData#getVersionColumns(String, String, String)
 .
-inserts
-Are
-Detected(type)
+insertsAreDetected(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#insertsAreDetected(int)
 .
-is
-Catalog
-At
-Start()
+isCatalogAtStart()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#isCatalogAtStart()
 .
-is
-Read
-Only()
+isReadOnly()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#isReadOnly()
 .
-locators
-Update
-Copy()
+locatorsUpdateCopy()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#locatorsUpdateCopy()
 .
-null
-Plus
-Non
-Null
-Is
-Null()
+nullPlusNonNullIsNull()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullPlusNonNullIsNull()
 .
-nulls
-Are
-Sorted
-At
-End()
+nullsAreSortedAtEnd()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedAtEnd()
 .
-nulls
-Are
-Sorted
-At
-Start()
+nullsAreSortedAtStart()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedAtStart()
 .
-nulls
-Are
-Sorted
-High()
+nullsAreSortedHigh()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedHigh()
 .
-nulls
-Are
-Sorted
-Low()
+nullsAreSortedLow()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedLow()
 .
-others
-Deletes
-Are
-Visible(type)
+othersDeletesAreVisible(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#othersDeletesAreVisible(int)
 .
-others
-Inserts
-Are
-Visible(type)
+othersInsertsAreVisible(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#othersInsertsAreVisible(int)
 .
-others
-Updates
-Are
-Visible(type)
+othersUpdatesAreVisible(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#othersUpdatesAreVisible(int)
 .
-own
-Deletes
-Are
-Visible(type)
+ownDeletesAreVisible(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#ownDeletesAreVisible(int)
 .
-own
-Inserts
-Are
-Visible(type)
+ownInsertsAreVisible(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#ownInsertsAreVisible(int)
 .
-own
-Updates
-Are
-Visible(type)
+ownUpdatesAreVisible(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#ownUpdatesAreVisible(int)
 .
-stores
-Lower
-Case
-Identifiers()
+storesLowerCaseIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesLowerCaseIdentifiers()
 .
-stores
-Lower
-Case
-Quoted
-Identifiers()
+storesLowerCaseQuotedIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesLowerCaseQuotedIdentifiers()
 .
-stores
-Mixed
-Case
-Identifiers()
+storesMixedCaseIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesMixedCaseIdentifiers()
 .
-stores
-Mixed
-Case
-Quoted
-Identifiers()
+storesMixedCaseQuotedIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesMixedCaseQuotedIdentifiers()
 .
-stores
-Upper
-Case
-Identifiers()
+storesUpperCaseIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesUpperCaseIdentifiers()
 .
-stores
-Upper
-Case
-Quoted
-Identifiers()
+storesUpperCaseQuotedIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesUpperCaseQuotedIdentifiers()
 .
-supports
-ANSI92EntryLevelSQL()
+supportsANSI92EntryLevelSQL()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsANSI92EntryLevelSQL()
 .
-supports
-ANSI92FullSQL()
+supportsANSI92FullSQL()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsANSI92FullSQL()
 .
-supports
-ANSI92IntermediateSQL()
+supportsANSI92IntermediateSQL()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsANSI92IntermediateSQL()
 .
-supports
-Alter
-Table
-With
-Add
-Column()
+supportsAlterTableWithAddColumn()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsAlterTableWithAddColumn()
 .
-supports
-Alter
-Table
-With
-Drop
-Column()
+supportsAlterTableWithDropColumn()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsAlterTableWithDropColumn()
 .
-supports
-Batch
-Updates()
+supportsBatchUpdates()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsBatchUpdates()
 .
-supports
-Catalogs
-In
-Data
-Manipulation()
+supportsCatalogsInDataManipulation()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInDataManipulation()
 .
-supports
-Catalogs
-In
-Index
-Definitions()
+supportsCatalogsInIndexDefinitions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInIndexDefinitions()
 .
-supports
-Catalogs
-In
-Privilege
-Definitions()
+supportsCatalogsInPrivilegeDefinitions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInPrivilegeDefinitions()
 .
-supports
-Catalogs
-In
-Procedure
-Calls()
+supportsCatalogsInProcedureCalls()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInProcedureCalls()
 .
-supports
-Catalogs
-In
-Table
-Definitions()
+supportsCatalogsInTableDefinitions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInTableDefinitions()
 .
-supports
-Column
-Aliasing()
+supportsColumnAliasing()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsColumnAliasing()
 .
-supports
-Convert()
+supportsConvert()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsConvert()
 .
-supports
-Convert(fromType, toType)
+supportsConvert(fromType, toType)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsConvert(int, int)
 .
-supports
-Core
-SQLGrammar()
+supportsCoreSQLGrammar()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCoreSQLGrammar()
 .
-supports
-Correlated
-Subqueries()
+supportsCorrelatedSubqueries()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCorrelatedSubqueries()
 .
-supports
-Data
-Definition
-And
-Data
-Manipulation
-Transactions()
+supportsDataDefinitionAndDataManipulationTransactions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsDataDefinitionAndDataManipulationTransactions()
 .
-supports
-Data
-Manipulation
-Transactions
-Only()
+supportsDataManipulationTransactionsOnly()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsDataManipulationTransactionsOnly()
 .
-supports
-Different
-Table
-Correlation
-Names()
+supportsDifferentTableCorrelationNames()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsDifferentTableCorrelationNames()
 .
-supports
-Expressions
-In
-Order
-By()
+supportsExpressionsInOrderBy()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsExpressionsInOrderBy()
 .
-supports
-Extended
-SQLGrammar()
+supportsExtendedSQLGrammar()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsExtendedSQLGrammar()
 .
-supports
-Full
-Outer
-Joins()
+supportsFullOuterJoins()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsFullOuterJoins()
 .
-supports
-Get
-Generated
-Keys()
+supportsGetGeneratedKeys()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGetGeneratedKeys()
 .
-supports
-Group
-By()
+supportsGroupBy()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGroupBy()
 .
-supports
-Group
-By
-Beyond
-Select()
+supportsGroupByBeyondSelect()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGroupByBeyondSelect()
 .
-supports
-Group
-By
-Unrelated()
+supportsGroupByUnrelated()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGroupByUnrelated()
 .
-supports
-Integrity
-Enhancement
-Facility()
+supportsIntegrityEnhancementFacility()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsIntegrityEnhancementFacility()
 .
-supports
-Like
-Escape
-Clause()
+supportsLikeEscapeClause()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsLikeEscapeClause()
 .
-supports
-Limited
-Outer
-Joins()
+supportsLimitedOuterJoins()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsLimitedOuterJoins()
 .
-supports
-Minimum
-SQLGrammar()
+supportsMinimumSQLGrammar()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMinimumSQLGrammar()
 .
-supports
-Mixed
-Case
-Identifiers()
+supportsMixedCaseIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMixedCaseIdentifiers()
 .
-supports
-Mixed
-Case
-Quoted
-Identifiers()
+supportsMixedCaseQuotedIdentifiers()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMixedCaseQuotedIdentifiers()
 .
-supports
-Multiple
-Open
-Results()
+supportsMultipleOpenResults()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMultipleOpenResults()
 .
-supports
-Multiple
-Result
-Sets()
+supportsMultipleResultSets()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMultipleResultSets()
 .
-supports
-Multiple
-Transactions()
+supportsMultipleTransactions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMultipleTransactions()
 .
-supports
-Named
-Parameters()
+supportsNamedParameters()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsNamedParameters()
 .
-supports
-Non
-Nullable
-Columns()
+supportsNonNullableColumns()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsNonNullableColumns()
 .
-supports
-Open
-Cursors
-Across
-Commit()
+supportsOpenCursorsAcrossCommit()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenCursorsAcrossCommit()
 .
-supports
-Open
-Cursors
-Across
-Rollback()
+supportsOpenCursorsAcrossRollback()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenCursorsAcrossRollback()
 .
-supports
-Open
-Statements
-Across
-Commit()
+supportsOpenStatementsAcrossCommit()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenStatementsAcrossCommit()
 .
-supports
-Open
-Statements
-Across
-Rollback()
+supportsOpenStatementsAcrossRollback()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenStatementsAcrossRollback()
 .
-supports
-Order
-By
-Unrelated()
+supportsOrderByUnrelated()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOrderByUnrelated()
 .
-supports
-Outer
-Joins()
+supportsOuterJoins()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOuterJoins()
 .
-supports
-Positioned
-Delete()
+supportsPositionedDelete()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsPositionedDelete()
 .
-supports
-Positioned
-Update()
+supportsPositionedUpdate()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsPositionedUpdate()
 .
-supports
-Result
-Set
-Concurrency(type, concurrency)
+supportsResultSetConcurrency(type, concurrency)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsResultSetConcurrency(int, int)
 .
-supports
-Result
-Set
-Holdability(holdability)
+supportsResultSetHoldability(holdability)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsResultSetHoldability(int)
 .
-supports
-Result
-Set
-Type(type)
+supportsResultSetType(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsResultSetType(int)
 .
-supports
-Savepoints()
+supportsSavepoints()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSavepoints()
 .
-supports
-Schemas
-In
-Data
-Manipulation()
+supportsSchemasInDataManipulation()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInDataManipulation()
 .
-supports
-Schemas
-In
-Index
-Definitions()
+supportsSchemasInIndexDefinitions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInIndexDefinitions()
 .
-supports
-Schemas
-In
-Privilege
-Definitions()
+supportsSchemasInPrivilegeDefinitions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInPrivilegeDefinitions()
 .
-supports
-Schemas
-In
-Procedure
-Calls()
+supportsSchemasInProcedureCalls()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInProcedureCalls()
 .
-supports
-Schemas
-In
-Table
-Definitions()
+supportsSchemasInTableDefinitions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInTableDefinitions()
 .
-supports
-Select
-For
-Update()
+supportsSelectForUpdate()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSelectForUpdate()
 .
-supports
-Statement
-Pooling()
+supportsStatementPooling()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsStatementPooling()
 .
-supports
-Stored
-Functions
-Using
-Call
-Syntax()
+supportsStoredFunctionsUsingCallSyntax()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsStoredFunctionsUsingCallSyntax()
 .
-supports
-Stored
-Procedures()
+supportsStoredProcedures()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsStoredProcedures()
 .
-supports
-Subqueries
-In
-Comparisons()
+supportsSubqueriesInComparisons()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInComparisons()
 .
-supports
-Subqueries
-In
-Exists()
+supportsSubqueriesInExists()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInExists()
 .
-supports
-Subqueries
-In
-Ins()
+supportsSubqueriesInIns()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInIns()
 .
-supports
-Subqueries
-In
-Quantifieds()
+supportsSubqueriesInQuantifieds()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInQuantifieds()
 .
-supports
-Table
-Correlation
-Names()
+supportsTableCorrelationNames()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsTableCorrelationNames()
 .
-supports
-Transaction
-Isolation
-Level(level)
+supportsTransactionIsolationLevel(level)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsTransactionIsolationLevel(int)
 .
-supports
-Transactions()
+supportsTransactions()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsTransactions()
 .
-supports
-Union()
+supportsUnion()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsUnion()
 .
-supports
-Union
-All()
+supportsUnionAll()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsUnionAll()
 .
-updates
-Are
-Detected(type)
+updatesAreDetected(type)
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#updatesAreDetected(int)
 .
-uses
-Local
-File
-Per
-Table()
+usesLocalFilePerTable()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#usesLocalFilePerTable()
 .
-uses
-Local
-Files()
+usesLocalFiles()
 Boolean
 For documentation of this method, see
 java.sql.DatabaseMetaData#usesLocalFiles()
 .
 Detailed documentation
-all
-Procedures
-Are
-Callable()
+allProceduresAreCallable()
 For documentation of this method, see
 java.sql.DatabaseMetaData#allProceduresAreCallable()
 .
@@ -1438,8 +895,7 @@ Boolean
 —
 true
 if the user can call all of the procedures returned by
-get
-Procedures(catalog, schemaPattern, procedureNamePattern)
+getProcedures(catalog, schemaPattern, procedureNamePattern)
 ;
 false
 otherwise.
@@ -1448,10 +904,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-all
-Tables
-Are
-Selectable()
+allTablesAreSelectable()
 For documentation of this method, see
 java.sql.DatabaseMetaData#allTablesAreSelectable()
 .
@@ -1460,8 +913,7 @@ Boolean
 —
 true
 if the user can call all of the tables returned by
-get
-Tables(catalog, schemaPattern, tableNamePattern, types)
+getTables(catalog, schemaPattern, tableNamePattern, types)
 in a
 SELECT
 statement;
@@ -1472,13 +924,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-auto
-Commit
-Failure
-Closes
-All
-Result
-Sets()
+autoCommitFailureClosesAllResultSets()
 For documentation of this method, see
 java.sql.DatabaseMetaData#autoCommitFailureClosesAllResultSets()
 .
@@ -1487,8 +933,7 @@ Boolean
 —
 true
 if, when
-auto
-Commit
+autoCommit
 is
 true
 , a SQL exception indicates
@@ -1500,11 +945,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-data
-Definition
-Causes
-Transaction
-Commit()
+dataDefinitionCausesTransactionCommit()
 For documentation of this method, see
 java.sql.DatabaseMetaData#dataDefinitionCausesTransactionCommit()
 .
@@ -1521,11 +962,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-data
-Definition
-Ignored
-In
-Transactions()
+dataDefinitionIgnoredInTransactions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#dataDefinitionIgnoredInTransactions()
 .
@@ -1541,9 +978,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-deletes
-Are
-Detected(type)
+deletesAreDetected(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#deletesAreDetected(int)
 .
@@ -1566,9 +1001,7 @@ Boolean
 true
 if for the specified result set type a visible row delete is detected by
     calls to
-Jdbc
-Result
-Set.rowDeleted()
+JdbcResultSet.rowDeleted()
 . If
 false
 , the deleted rows are removed
@@ -1578,12 +1011,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-does
-Max
-Row
-Size
-Include
-Blobs()
+doesMaxRowSizeIncludeBlobs()
 For documentation of this method, see
 java.sql.DatabaseMetaData#doesMaxRowSizeIncludeBlobs()
 .
@@ -1597,10 +1025,7 @@ and
 LONGVARBINARY
 are
     included in the size returned by
-get
-Max
-Row
-Size()
+getMaxRowSize()
 ;
 false
 otherwise.
@@ -1609,8 +1034,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Attributes(catalog, schemaPattern, typeNamePattern, attributeNamePattern)
+getAttributes(catalog, schemaPattern, typeNamePattern, attributeNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getAttributes(String, String, String, String)
 .
@@ -1624,29 +1048,22 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-type
-Name
-Pattern
+typeNamePattern
 String
 The user-defined type name pattern; it must match the type name as it is
     stored in the database.
-attribute
-Name
-Pattern
+attributeNamePattern
 String
 The attribute name pattern; it must match the attribute name as it
     is declared in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing descriptions the attributes for a specified user-defined type
     available in the specified schema and catalog. Each row provides information about a
     specific attribute, ordered by
@@ -1663,10 +1080,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Best
-Row
-Identifier(catalog, schema, table, scope, nullable)
+getBestRowIdentifier(catalog, schema, table, scope, nullable)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getBestRowIdentifier(String, String, String, int, boolean)
 .
@@ -1701,9 +1115,7 @@ If
 true
 , include columns that are nullable; otherwise do not.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the column descriptions that uniquely identify a row (one
     column description per row in the result set, ordered by
 SCOPE
@@ -1713,9 +1125,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Catalog
-Separator()
+getCatalogSeparator()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCatalogSeparator()
 .
@@ -1727,9 +1137,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Catalog
-Term()
+getCatalogTerm()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCatalogTerm()
 .
@@ -1741,32 +1149,24 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Catalogs()
+getCatalogs()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCatalogs()
 .
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the catalog names, one per row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Client
-Info
-Properties()
+getClientInfoProperties()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getClientInfoProperties()
 .
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing client info properties the driver supports, ordered by
 NAME
 , one per row.
@@ -1775,9 +1175,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Column
-Privileges(catalog, schema, table, columnNamePattern)
+getColumnPrivileges(catalog, schema, table, columnNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getColumnPrivileges(String, String, String, String)
 .
@@ -1800,16 +1198,12 @@ incidates the schema name isn't used to narrow the search.
 table
 String
 The table name. It must match the table name as it is stored in the database.
-column
-Name
-Pattern
+columnNamePattern
 String
 The column name pattern to filter the search by. It must match the
     column name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the column privilege descriptions, one per row, ordered by
 COLUMN_NAME
 and
@@ -1820,8 +1214,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Columns(catalog, schemaPattern, tableNamePattern, columnNamePattern)
+getColumns(catalog, schemaPattern, tableNamePattern, columnNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getColumns(String, String, String, String)
 .
@@ -1835,29 +1228,22 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-table
-Name
-Pattern
+tableNamePattern
 String
 The table name pattern to filter the search by. It must match the table
     name as it is stored in the database.
-column
-Name
-Pattern
+columnNamePattern
 String
 The column name pattern to filter the search by. It must match the
     column name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the column descriptions, one per row, ordered according to
 TABLE_CAT
 ,
@@ -1872,23 +1258,19 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Connection()
+getConnection()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getConnection()
 .
 Return
-Jdbc
-Connection
+JdbcConnection
 — The connection that produced this metadata.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Cross
-Reference(parentCatalog, parentSchema, parentTable, foreignCatalog, foreignSchema, foreignTable)
+getCrossReference(parentCatalog, parentSchema, parentTable, foreignCatalog, foreignSchema, foreignTable)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getCrossReference(String, String, String,
      String, String, String)
@@ -1897,52 +1279,44 @@ Parameters
 Name
 Type
 Description
-parent
-Catalog
+parentCatalog
 String
 A parent catalog name as it appears in the database. Passing an empty
     string retrieves those procedures without a catalog. Passing
 null
 incidates the
     catalog name isn't used in the selection criteria.
-parent
-Schema
+parentSchema
 String
 A parent schema name as it appears in the database. Passing an empty string
     retrieves those procedures without a schema. Passing
 null
 incidates the schema name
     isn't used in the selection criteria.
-parent
-Table
+parentTable
 String
 The name of the parent table that exports the key. It must match the table
     name as it is stored in the database.
-foreign
-Catalog
+foreignCatalog
 String
 A foreign catalog name as it appears in the database. Passing an empty
     string retrieves those procedures without a catalog. Passing
 null
 incidates the
     catalog name isn't used in the selection criteria.
-foreign
-Schema
+foreignSchema
 String
 A foreign schema name as it appears in the database. Passing an empty
     string retrieves those procedures without a schema. Passing
 null
 incidates the
     schema name isn't used in the selection criteria.
-foreign
-Table
+foreignTable
 String
 The name of the foreign table that exports the key. It must match the table
     name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An result set containing the foreign key column descriptions from the specified foreign
     key table that reference the primary key or the columns representing a unique constraint of
     the parent table. One column description is provided in each row of the result set, and
@@ -1960,10 +1334,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Database
-Major
-Version()
+getDatabaseMajorVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseMajorVersion()
 .
@@ -1975,10 +1346,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Database
-Minor
-Version()
+getDatabaseMinorVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseMinorVersion()
 .
@@ -1990,10 +1358,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Database
-Product
-Name()
+getDatabaseProductName()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseProductName()
 .
@@ -2005,10 +1370,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Database
-Product
-Version()
+getDatabaseProductVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDatabaseProductVersion()
 .
@@ -2020,10 +1382,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Default
-Transaction
-Isolation()
+getDefaultTransactionIsolation()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDefaultTransactionIsolation()
 .
@@ -2045,10 +1404,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Driver
-Major
-Version()
+getDriverMajorVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverMajorVersion()
 .
@@ -2060,10 +1416,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Driver
-Minor
-Version()
+getDriverMinorVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverMinorVersion()
 .
@@ -2075,9 +1428,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Driver
-Name()
+getDriverName()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverName()
 .
@@ -2089,9 +1440,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Driver
-Version()
+getDriverVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getDriverVersion()
 .
@@ -2103,9 +1452,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Exported
-Keys(catalog, schema, table)
+getExportedKeys(catalog, schema, table)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getImportedKeys(String, String, String)
 .
@@ -2130,9 +1477,7 @@ table
 String
 The table name. It must match the table name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An result set containing the foreign key column descriptions for the primary key
     columns exported by the table. One column description is provided in each row of the result
     set, and they are ordered by
@@ -2149,10 +1494,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Extra
-Name
-Characters()
+getExtraNameCharacters()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getExtraNameCharacters()
 .
@@ -2165,9 +1507,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Function
-Columns(catalog, schemaPattern, functionNamePattern, columnNamePattern)
+getFunctionColumns(catalog, schemaPattern, functionNamePattern, columnNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getFunctionColumns(String, String, String, String)
 .
@@ -2181,29 +1521,22 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-function
-Name
-Pattern
+functionNamePattern
 String
 The function pattern, which match the function name as it is stored
     in the database.
-column
-Name
-Pattern
+columnNamePattern
 String
 The parameter name pattern, which must match the parameter or column
     name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the descriptions of system and user function parameters
     available in the given catalog. Each row contains one function description, ordered
     according to
@@ -2220,8 +1553,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Functions(catalog, schemaPattern, functionNamePattern)
+getFunctions(catalog, schemaPattern, functionNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getFunctions(String, String, String)
 .
@@ -2235,23 +1567,18 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-function
-Name
-Pattern
+functionNamePattern
 String
 The function pattern, which must match the function name as it is
     stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing descriptions of the system and user functions available in the
     given catalog. Each row contains one function description, ordered according to
 FUNCTION_CAT
@@ -2267,10 +1594,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Identifier
-Quote
-String()
+getIdentifierQuoteString()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getIdentifierQuoteString()
 .
@@ -2283,9 +1607,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Imported
-Keys(catalog, schema, table)
+getImportedKeys(catalog, schema, table)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getImportedKeys(String, String, String)
 .
@@ -2310,9 +1632,7 @@ table
 String
 The table name. It must match the table name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An result set containing the column descriptions for the primary key columns referenced
     by the given table's foreign key columns (those imported by a table). One column
     description is provided in each row of the result set, and they are ordered by
@@ -2329,9 +1649,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Index
-Info(catalog, schema, table, unique, approximate)
+getIndexInfo(catalog, schema, table, unique, approximate)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getIndexInfo(String, String, String, boolean, boolean)
 .
@@ -2368,9 +1686,7 @@ true
 , the result is allowed to reflect approximate or out-of-data
     values; otherwise result accuracy is requested.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An result set containing the index and statistic column descriptions for the specified
     table. One column description is provided in each row of the result set, and they are
     ordered by
@@ -2387,9 +1703,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-JDBCMajor
-Version()
+getJDBCMajorVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getJDBCMajorVersion()
 .
@@ -2401,9 +1715,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-JDBCMinor
-Version()
+getJDBCMinorVersion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getJDBCMinorVersion()
 .
@@ -2415,11 +1727,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Binary
-Literal
-Length()
+getMaxBinaryLiteralLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxBinaryLiteralLength()
 .
@@ -2432,11 +1740,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Catalog
-Name
-Length()
+getMaxCatalogNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxCatalogNameLength()
 .
@@ -2449,11 +1753,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Char
-Literal
-Length()
+getMaxCharLiteralLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxCharLiteralLength()
 .
@@ -2466,11 +1766,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Column
-Name
-Length()
+getMaxColumnNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnNameLength()
 .
@@ -2483,12 +1779,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Columns
-In
-Group
-By()
+getMaxColumnsInGroupBy()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInGroupBy()
 .
@@ -2503,11 +1794,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Columns
-In
-Index()
+getMaxColumnsInIndex()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInIndex()
 .
@@ -2520,12 +1807,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Columns
-In
-Order
-By()
+getMaxColumnsInOrderBy()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInOrderBy()
 .
@@ -2540,11 +1822,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Columns
-In
-Select()
+getMaxColumnsInSelect()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInSelect()
 .
@@ -2559,11 +1837,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Columns
-In
-Table()
+getMaxColumnsInTable()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxColumnsInTable()
 .
@@ -2576,9 +1850,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Connections()
+getMaxConnections()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxConnections()
 .
@@ -2591,11 +1863,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Cursor
-Name
-Length()
+getMaxCursorNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxCursorNameLength()
 .
@@ -2608,10 +1876,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Index
-Length()
+getMaxIndexLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxIndexLength()
 .
@@ -2624,11 +1889,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Procedure
-Name
-Length()
+getMaxProcedureNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxProcedureNameLength()
 .
@@ -2641,10 +1902,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Row
-Size()
+getMaxRowSize()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxRowSize()
 .
@@ -2657,11 +1915,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Schema
-Name
-Length()
+getMaxSchemaNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxSchemaNameLength()
 .
@@ -2674,10 +1928,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Statement
-Length()
+getMaxStatementLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxStatementLength()
 .
@@ -2690,9 +1941,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Statements()
+getMaxStatements()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxStatements()
 .
@@ -2705,11 +1954,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Table
-Name
-Length()
+getMaxTableNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxTableNameLength()
 .
@@ -2722,11 +1967,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-Tables
-In
-Select()
+getMaxTablesInSelect()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxTablesInSelect()
 .
@@ -2741,11 +1982,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Max
-User
-Name
-Length()
+getMaxUserNameLength()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getMaxUserNameLength()
 .
@@ -2758,9 +1995,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Numeric
-Functions()
+getNumericFunctions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getNumericFunctions()
 .
@@ -2773,9 +2008,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Primary
-Keys(catalog, schema, table)
+getPrimaryKeys(catalog, schema, table)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getPrimaryKeys(String, String, String)
 .
@@ -2800,9 +2033,7 @@ table
 String
 The table name. It must match the table name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An result set containing the column descriptions for the primary key columns, one per
     row, ordered by
 COLUMN_NAME
@@ -2812,9 +2043,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Procedure
-Columns(catalog, schemaPattern, procedureNamePattern, columnNamePattern)
+getProcedureColumns(catalog, schemaPattern, procedureNamePattern, columnNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getProcedureColumns(String, String, String, String)
 .
@@ -2828,38 +2057,29 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-procedure
-Name
-Pattern
+procedureNamePattern
 String
 The procedure name pattern to filter the search by. It must match
     the procedure name as it is stored in the database.
-column
-Name
-Pattern
+columnNamePattern
 String
 The column name pattern to filter the search by. It must match the
     column name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the procedure and column descriptions, one per row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Procedure
-Term()
+getProcedureTerm()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getProcedureTerm()
 .
@@ -2871,8 +2091,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Procedures(catalog, schemaPattern, procedureNamePattern)
+getProcedures(catalog, schemaPattern, procedureNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getProcedures(String, String, String)
 .
@@ -2886,33 +2105,25 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-procedure
-Name
-Pattern
+procedureNamePattern
 String
 The procedure name pattern to filter the search by. It must match
     the procedure name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the procedure descriptions, one per row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Result
-Set
-Holdability()
+getResultSetHoldability()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getResultSetHoldability()
 .
@@ -2928,10 +2139,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Row
-Id
-Lifetime()
+getRowIdLifetime()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getRowIdLifetime()
 .
@@ -2955,8 +2163,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-SQLKeywords()
+getSQLKeywords()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSQLKeywords()
 .
@@ -2969,9 +2176,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-SQLState
-Type()
+getSQLStateType()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSQLStateType()
 .
@@ -2980,22 +2185,16 @@ Integer
 — The type of
 SQLSTATE
 , which is either
-sql
-State
-XOpen
+sqlStateXOpen
 or
-sql
-State
-SQL
+sqlStateSQL
 .
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Schema
-Term()
+getSchemaTerm()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSchemaTerm()
 .
@@ -3007,23 +2206,19 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Schemas()
+getSchemas()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSchemas()
 .
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the schema descriptions, one per row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Schemas(catalog, schemaPattern)
+getSchemas(catalog, schemaPattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSchemas()
 .
@@ -3037,17 +2232,14 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing scheme descriptions available in this database, ordered by
 TABLE_CATALOG
 and
@@ -3058,10 +2250,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Search
-String
-Escape()
+getSearchStringEscape()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSearchStringEscape()
 .
@@ -3073,9 +2262,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-String
-Functions()
+getStringFunctions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getStringFunctions()
 .
@@ -3088,9 +2275,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Super
-Tables(catalog, schemaPattern, tableNamePattern)
+getSuperTables(catalog, schemaPattern, tableNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSuperTables(String, String,String)
 .
@@ -3105,20 +2290,15 @@ The catalog name as it appears in the database. Passing an empty string
 null
 incidates the catalog
     name isn't used in the selection criteria.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema.
-table
-Name
-Pattern
+tableNamePattern
 String
 The table name pattern; may be a fully qualified name.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing descriptions of the table hierarchies defined in a particular
     schema in this database. Each row provides information about a specific table type. Tables
     without supers aren't listed.
@@ -3127,9 +2307,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Super
-Types(catalog, schemaPattern, typeNamePattern)
+getSuperTypes(catalog, schemaPattern, typeNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSuperTypes(String, String, String)
 .
@@ -3144,20 +2322,15 @@ The catalog name as it appears in the database. Passing an empty string
 null
 incidates the catalog
     name isn't used in the selection criteria.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema.
-type
-Name
-Pattern
+typeNamePattern
 String
 The user-defined type name pattern; may be a fully qualified name.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing descriptions of the user-defined type hierarchies defined in a
     particular schema in this database. Each row provides information about a specific
     user-defined type. Types without supers aren't listed.
@@ -3166,9 +2339,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-System
-Functions()
+getSystemFunctions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getSystemFunctions()
 .
@@ -3181,9 +2352,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Table
-Privileges(catalog, schemaPattern, tableNamePattern)
+getTablePrivileges(catalog, schemaPattern, tableNamePattern)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTablePrivileges(String, String, String)
 .
@@ -3197,23 +2366,18 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-table
-Name
-Pattern
+tableNamePattern
 String
 The table name pattern to filter the search by. It must match the table
     name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the table privilege descriptions, one per row, ordered by
 TABLE_CAT
 ,
@@ -3228,24 +2392,19 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Table
-Types()
+getTableTypes()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTableTypes()
 .
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the table types, one per row.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Tables(catalog, schemaPattern, tableNamePattern, types)
+getTables(catalog, schemaPattern, tableNamePattern, types)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTables(String, String, String, String[])
 .
@@ -3259,33 +2418,26 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-table
-Name
-Pattern
+tableNamePattern
 String
 The table name pattern to filter the search by. It must match the table
     name as it is stored in the database.
 types
 String[]
-A list of type types to return, each of which must be on the list that
-get
-Table
-Types()
+A list of table types to return, each of which must be on the list that
+getTableTypes()
 returns. Passing
 null
 indictates that all table types are
     returned.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the table descriptions, one per row, ordered according to
 TABLE_TYPE
 ,
@@ -3300,10 +2452,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Time
-Date
-Functions()
+getTimeDateFunctions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTimeDateFunctions()
 .
@@ -3315,16 +2464,12 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Type
-Info()
+getTypeInfo()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getTypeInfo()
 .
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An result set containing the descriptions of data types supported by this database. One
     SQL type description is provided in each row of the result set, and they are ordered by
 DATA_TYPE
@@ -3335,8 +2480,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-UDTs(catalog, schemaPattern, typeNamePattern, types)
+getUDTs(catalog, schemaPattern, typeNamePattern, types)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getUDTs(String, String, String, int[])
 .
@@ -3350,16 +2494,13 @@ The catalog name to filter the search by, as it appears in the database. Passing
     an empty string retrieves those procedures without a catalog. Passing
 null
 incidates the catalog name isn't used to narrow the search.
-schema
-Pattern
+schemaPattern
 String
 The schema name pattern to filter the search by, as it appears in the
     database. Passing an empty string retrieves those procedures without a schema. Passing
 null
 incidates the schema name isn't used to narrow the search.
-type
-Name
-Pattern
+typeNamePattern
 String
 The type name pattern to filter the search by; may be a fully qualified
     name.
@@ -3375,9 +2516,7 @@ DISTINCT
 null
 indictates that all types are returned.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — A result set containing the user-defined type (UDT) descriptions, one per row, ordered
     according to
 DATA_TYPE
@@ -3393,8 +2532,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-URL()
+getURL()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getURL()
 .
@@ -3408,9 +2546,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-User
-Name()
+getUserName()
 For documentation of this method, see
 java.sql.DatabaseMetaData#getUserName()
 .
@@ -3422,9 +2558,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Version
-Columns(catalog, schema, table)
+getVersionColumns(catalog, schema, table)
 For documentation of this method, see
 java.sql.DatabaseMetaData#getVersionColumns(String, String, String)
 .
@@ -3449,9 +2583,7 @@ table
 String
 The table name. It must match the table name as it is stored in the database.
 Return
-Jdbc
-Result
-Set
+JdbcResultSet
 — An unordered result set containing the column descriptions that are updated when any
     value in a row is updated (one column description per row in the result set).
 Authorization
@@ -3459,9 +2591,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-inserts
-Are
-Detected(type)
+insertsAreDetected(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#insertsAreDetected(int)
 .
@@ -3484,9 +2614,7 @@ Boolean
 true
 if for the specified result set type a visible row insert is detected by
     calls to
-Jdbc
-Result
-Set.rowInserted()
+JdbcResultSet.rowInserted()
 ;
 false
 otherwise.
@@ -3495,10 +2623,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Catalog
-At
-Start()
+isCatalogAtStart()
 For documentation of this method, see
 java.sql.DatabaseMetaData#isCatalogAtStart()
 .
@@ -3514,9 +2639,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-is
-Read
-Only()
+isReadOnly()
 For documentation of this method, see
 java.sql.DatabaseMetaData#isReadOnly()
 .
@@ -3532,9 +2655,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-locators
-Update
-Copy()
+locatorsUpdateCopy()
 For documentation of this method, see
 java.sql.DatabaseMetaData#locatorsUpdateCopy()
 .
@@ -3550,12 +2671,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-null
-Plus
-Non
-Null
-Is
-Null()
+nullPlusNonNullIsNull()
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullPlusNonNullIsNull()
 .
@@ -3577,11 +2693,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-nulls
-Are
-Sorted
-At
-End()
+nullsAreSortedAtEnd()
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedAtEnd()
 .
@@ -3600,11 +2712,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-nulls
-Are
-Sorted
-At
-Start()
+nullsAreSortedAtStart()
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedAtStart()
 .
@@ -3623,10 +2731,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-nulls
-Are
-Sorted
-High()
+nullsAreSortedHigh()
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedHigh()
 .
@@ -3645,10 +2750,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-nulls
-Are
-Sorted
-Low()
+nullsAreSortedLow()
 For documentation of this method, see
 java.sql.DatabaseMetaData#nullsAreSortedLow()
 .
@@ -3667,10 +2769,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-others
-Deletes
-Are
-Visible(type)
+othersDeletesAreVisible(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#othersDeletesAreVisible(int)
 .
@@ -3699,10 +2798,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-others
-Inserts
-Are
-Visible(type)
+othersInsertsAreVisible(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#othersInsertsAreVisible(int)
 .
@@ -3731,10 +2827,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-others
-Updates
-Are
-Visible(type)
+othersUpdatesAreVisible(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#othersUpdatesAreVisible(int)
 .
@@ -3763,10 +2856,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-own
-Deletes
-Are
-Visible(type)
+ownDeletesAreVisible(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#ownDeletesAreVisible(int)
 .
@@ -3795,10 +2885,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-own
-Inserts
-Are
-Visible(type)
+ownInsertsAreVisible(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#ownInsertsAreVisible(int)
 .
@@ -3827,10 +2914,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-own
-Updates
-Are
-Visible(type)
+ownUpdatesAreVisible(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#ownUpdatesAreVisible(int)
 .
@@ -3859,10 +2943,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-stores
-Lower
-Case
-Identifiers()
+storesLowerCaseIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesLowerCaseIdentifiers()
 .
@@ -3879,11 +2960,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-stores
-Lower
-Case
-Quoted
-Identifiers()
+storesLowerCaseQuotedIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesLowerCaseQuotedIdentifiers()
 .
@@ -3900,10 +2977,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-stores
-Mixed
-Case
-Identifiers()
+storesMixedCaseIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesMixedCaseIdentifiers()
 .
@@ -3920,11 +2994,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-stores
-Mixed
-Case
-Quoted
-Identifiers()
+storesMixedCaseQuotedIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesMixedCaseQuotedIdentifiers()
 .
@@ -3941,10 +3011,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-stores
-Upper
-Case
-Identifiers()
+storesUpperCaseIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesUpperCaseIdentifiers()
 .
@@ -3961,11 +3028,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-stores
-Upper
-Case
-Quoted
-Identifiers()
+storesUpperCaseQuotedIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#storesUpperCaseQuotedIdentifiers()
 .
@@ -3982,8 +3045,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-ANSI92EntryLevelSQL()
+supportsANSI92EntryLevelSQL()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsANSI92EntryLevelSQL()
 .
@@ -3999,8 +3061,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-ANSI92FullSQL()
+supportsANSI92FullSQL()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsANSI92FullSQL()
 .
@@ -4016,8 +3077,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-ANSI92IntermediateSQL()
+supportsANSI92IntermediateSQL()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsANSI92IntermediateSQL()
 .
@@ -4033,12 +3093,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Alter
-Table
-With
-Add
-Column()
+supportsAlterTableWithAddColumn()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsAlterTableWithAddColumn()
 .
@@ -4056,12 +3111,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Alter
-Table
-With
-Drop
-Column()
+supportsAlterTableWithDropColumn()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsAlterTableWithDropColumn()
 .
@@ -4079,9 +3129,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Batch
-Updates()
+supportsBatchUpdates()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsBatchUpdates()
 .
@@ -4097,11 +3145,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Catalogs
-In
-Data
-Manipulation()
+supportsCatalogsInDataManipulation()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInDataManipulation()
 .
@@ -4117,11 +3161,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Catalogs
-In
-Index
-Definitions()
+supportsCatalogsInIndexDefinitions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInIndexDefinitions()
 .
@@ -4137,11 +3177,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Catalogs
-In
-Privilege
-Definitions()
+supportsCatalogsInPrivilegeDefinitions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInPrivilegeDefinitions()
 .
@@ -4157,11 +3193,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Catalogs
-In
-Procedure
-Calls()
+supportsCatalogsInProcedureCalls()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInProcedureCalls()
 .
@@ -4177,11 +3209,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Catalogs
-In
-Table
-Definitions()
+supportsCatalogsInTableDefinitions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCatalogsInTableDefinitions()
 .
@@ -4197,9 +3225,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Column
-Aliasing()
+supportsColumnAliasing()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsColumnAliasing()
 .
@@ -4215,8 +3241,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Convert()
+supportsConvert()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsConvert()
 .
@@ -4238,8 +3263,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Convert(fromType, toType)
+supportsConvert(fromType, toType)
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsConvert(int, int)
 .
@@ -4247,14 +3271,12 @@ Parameters
 Name
 Type
 Description
-from
-Type
+fromType
 Integer
 The
 type
 to convert from.
-to
-Type
+toType
 Integer
 The
 type
@@ -4274,9 +3296,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Core
-SQLGrammar()
+supportsCoreSQLGrammar()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCoreSQLGrammar()
 .
@@ -4292,9 +3312,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Correlated
-Subqueries()
+supportsCorrelatedSubqueries()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsCorrelatedSubqueries()
 .
@@ -4310,13 +3328,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Data
-Definition
-And
-Data
-Manipulation
-Transactions()
+supportsDataDefinitionAndDataManipulationTransactions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsDataDefinitionAndDataManipulationTransactions()
 .
@@ -4333,11 +3345,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Data
-Manipulation
-Transactions
-Only()
+supportsDataManipulationTransactionsOnly()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsDataManipulationTransactionsOnly()
 .
@@ -4354,11 +3362,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Different
-Table
-Correlation
-Names()
+supportsDifferentTableCorrelationNames()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsDifferentTableCorrelationNames()
 .
@@ -4375,11 +3379,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Expressions
-In
-Order
-By()
+supportsExpressionsInOrderBy()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsExpressionsInOrderBy()
 .
@@ -4397,9 +3397,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Extended
-SQLGrammar()
+supportsExtendedSQLGrammar()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsExtendedSQLGrammar()
 .
@@ -4415,10 +3413,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Full
-Outer
-Joins()
+supportsFullOuterJoins()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsFullOuterJoins()
 .
@@ -4434,10 +3429,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Get
-Generated
-Keys()
+supportsGetGeneratedKeys()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGetGeneratedKeys()
 .
@@ -4453,9 +3445,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Group
-By()
+supportsGroupBy()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGroupBy()
 .
@@ -4473,11 +3463,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Group
-By
-Beyond
-Select()
+supportsGroupByBeyondSelect()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGroupByBeyondSelect()
 .
@@ -4501,10 +3487,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Group
-By
-Unrelated()
+supportsGroupByUnrelated()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsGroupByUnrelated()
 .
@@ -4524,10 +3507,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Integrity
-Enhancement
-Facility()
+supportsIntegrityEnhancementFacility()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsIntegrityEnhancementFacility()
 .
@@ -4543,10 +3523,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Like
-Escape
-Clause()
+supportsLikeEscapeClause()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsLikeEscapeClause()
 .
@@ -4564,10 +3541,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Limited
-Outer
-Joins()
+supportsLimitedOuterJoins()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsLimitedOuterJoins()
 .
@@ -4583,9 +3557,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Minimum
-SQLGrammar()
+supportsMinimumSQLGrammar()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMinimumSQLGrammar()
 .
@@ -4601,10 +3573,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Mixed
-Case
-Identifiers()
+supportsMixedCaseIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMixedCaseIdentifiers()
 .
@@ -4621,11 +3590,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Mixed
-Case
-Quoted
-Identifiers()
+supportsMixedCaseQuotedIdentifiers()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMixedCaseQuotedIdentifiers()
 .
@@ -4642,10 +3607,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Multiple
-Open
-Results()
+supportsMultipleOpenResults()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMultipleOpenResults()
 .
@@ -4661,10 +3623,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Multiple
-Result
-Sets()
+supportsMultipleResultSets()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMultipleResultSets()
 .
@@ -4681,9 +3640,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Multiple
-Transactions()
+supportsMultipleTransactions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsMultipleTransactions()
 .
@@ -4700,9 +3657,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Named
-Parameters()
+supportsNamedParameters()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsNamedParameters()
 .
@@ -4718,10 +3673,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Non
-Nullable
-Columns()
+supportsNonNullableColumns()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsNonNullableColumns()
 .
@@ -4737,11 +3689,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Open
-Cursors
-Across
-Commit()
+supportsOpenCursorsAcrossCommit()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenCursorsAcrossCommit()
 .
@@ -4757,11 +3705,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Open
-Cursors
-Across
-Rollback()
+supportsOpenCursorsAcrossRollback()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenCursorsAcrossRollback()
 .
@@ -4777,11 +3721,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Open
-Statements
-Across
-Commit()
+supportsOpenStatementsAcrossCommit()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenStatementsAcrossCommit()
 .
@@ -4797,11 +3737,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Open
-Statements
-Across
-Rollback()
+supportsOpenStatementsAcrossRollback()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOpenStatementsAcrossRollback()
 .
@@ -4817,10 +3753,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Order
-By
-Unrelated()
+supportsOrderByUnrelated()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOrderByUnrelated()
 .
@@ -4840,9 +3773,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Outer
-Joins()
+supportsOuterJoins()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsOuterJoins()
 .
@@ -4858,9 +3789,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Positioned
-Delete()
+supportsPositionedDelete()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsPositionedDelete()
 .
@@ -4878,9 +3807,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Positioned
-Update()
+supportsPositionedUpdate()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsPositionedUpdate()
 .
@@ -4898,10 +3825,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Result
-Set
-Concurrency(type, concurrency)
+supportsResultSetConcurrency(type, concurrency)
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsResultSetConcurrency(int, int)
 .
@@ -4938,10 +3862,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Result
-Set
-Holdability(holdability)
+supportsResultSetHoldability(holdability)
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsResultSetHoldability(int)
 .
@@ -4968,10 +3889,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Result
-Set
-Type(type)
+supportsResultSetType(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsResultSetType(int)
 .
@@ -5000,8 +3918,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Savepoints()
+supportsSavepoints()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSavepoints()
 .
@@ -5017,11 +3934,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Schemas
-In
-Data
-Manipulation()
+supportsSchemasInDataManipulation()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInDataManipulation()
 .
@@ -5037,11 +3950,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Schemas
-In
-Index
-Definitions()
+supportsSchemasInIndexDefinitions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInIndexDefinitions()
 .
@@ -5057,11 +3966,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Schemas
-In
-Privilege
-Definitions()
+supportsSchemasInPrivilegeDefinitions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInPrivilegeDefinitions()
 .
@@ -5077,11 +3982,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Schemas
-In
-Procedure
-Calls()
+supportsSchemasInProcedureCalls()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInProcedureCalls()
 .
@@ -5097,11 +3998,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Schemas
-In
-Table
-Definitions()
+supportsSchemasInTableDefinitions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSchemasInTableDefinitions()
 .
@@ -5117,10 +4014,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Select
-For
-Update()
+supportsSelectForUpdate()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSelectForUpdate()
 .
@@ -5138,9 +4032,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Statement
-Pooling()
+supportsStatementPooling()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsStatementPooling()
 .
@@ -5156,12 +4048,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Stored
-Functions
-Using
-Call
-Syntax()
+supportsStoredFunctionsUsingCallSyntax()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsStoredFunctionsUsingCallSyntax()
 .
@@ -5178,9 +4065,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Stored
-Procedures()
+supportsStoredProcedures()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsStoredProcedures()
 .
@@ -5197,10 +4082,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Subqueries
-In
-Comparisons()
+supportsSubqueriesInComparisons()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInComparisons()
 .
@@ -5216,10 +4098,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Subqueries
-In
-Exists()
+supportsSubqueriesInExists()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInExists()
 .
@@ -5237,10 +4116,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Subqueries
-In
-Ins()
+supportsSubqueriesInIns()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInIns()
 .
@@ -5258,10 +4134,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Subqueries
-In
-Quantifieds()
+supportsSubqueriesInQuantifieds()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsSubqueriesInQuantifieds()
 .
@@ -5277,10 +4150,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Table
-Correlation
-Names()
+supportsTableCorrelationNames()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsTableCorrelationNames()
 .
@@ -5296,10 +4166,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Transaction
-Isolation
-Level(level)
+supportsTransactionIsolationLevel(level)
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsTransactionIsolationLevel(int)
 .
@@ -5332,8 +4199,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Transactions()
+supportsTransactions()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsTransactions()
 .
@@ -5349,8 +4215,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Union()
+supportsUnion()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsUnion()
 .
@@ -5368,9 +4233,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-supports
-Union
-All()
+supportsUnionAll()
 For documentation of this method, see
 java.sql.DatabaseMetaData#supportsUnionAll()
 .
@@ -5388,9 +4251,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-updates
-Are
-Detected(type)
+updatesAreDetected(type)
 For documentation of this method, see
 java.sql.DatabaseMetaData#updatesAreDetected(int)
 .
@@ -5413,9 +4274,7 @@ Boolean
 true
 if for the specified result set type a visible row update is detected by
     calls to
-Jdbc
-Result
-Set.rowUpdated()
+JdbcResultSet.rowUpdated()
 ;
 false
 otherwise.
@@ -5424,11 +4283,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-uses
-Local
-File
-Per
-Table()
+usesLocalFilePerTable()
 For documentation of this method, see
 java.sql.DatabaseMetaData#usesLocalFilePerTable()
 .
@@ -5444,9 +4299,7 @@ Scripts that use this method require authorization with one or more of the follo
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-uses
-Local
-Files()
+usesLocalFiles()
 For documentation of this method, see
 java.sql.DatabaseMetaData#usesLocalFiles()
 .

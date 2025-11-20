@@ -1,6 +1,71 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/models/gemini-v2/index.html
 
-OUR MOST ADVANCED MODEL
+OUR MOST INTELLIGENT MODEL
+Gemini 3 Pro
+The best model in the world for multimodal understanding, and our most powerful agentic and vibe-coding model yet, delivering richer visuals and deeper interactivity, all built on a foundation of state-of-the-art reasoning.
+Expand to learn more
+Try in Google AI Studio
+Model details
+Gemini 3 Pro Preview
+Property
+Description
+id_card
+Model code
+gemini-3-pro-preview
+save
+Supported data types
+Inputs
+Text, Image, Video, Audio, and PDF
+Output
+Text
+token_auto
+Token limits
+[*]
+Input token limit
+1,048,576
+Output token limit
+65,536
+handyman
+Capabilities
+Audio generation
+Not supported
+Batch API
+Supported
+Caching
+Supported
+Code execution
+Supported
+File search
+Supported
+Function calling
+Supported
+Grounding with Google Maps
+Not supported
+Image generation
+Not supported
+Live API
+Not supported
+Search grounding
+Supported
+Structured outputs
+Supported
+Thinking
+Supported
+URL context
+Supported
+123
+Versions
+Read the
+model version patterns
+for more details.
+Preview: gemini-3-pro-preview
+calendar_month
+Latest update
+November 2025
+cognition_2
+Knowledge cutoff
+January 2025
+OUR ADVANCED THINKING MODEL
 Gemini 2.5 Pro
 Our state-of-the-art thinking model, capable of reasoning over complex problems in code, math, and STEM, as well as analyzing large datasets, codebases, and documents using long context.
 Expand to learn more
@@ -155,8 +220,6 @@ Supported
 Caching
 Supported
 Code execution
-Supported
-File search
 Supported
 File search
 Supported
@@ -556,7 +619,7 @@ September 2025
 cognition_2
 Knowledge cutoff
 January 2025
-Previous Gemini Models
+Previous Gemini models
 OUR SECOND GENERATION WORKHORSE MODEL
 Gemini 2.0 Flash
 Our second generation workhorse model, with a 1 million token context window.

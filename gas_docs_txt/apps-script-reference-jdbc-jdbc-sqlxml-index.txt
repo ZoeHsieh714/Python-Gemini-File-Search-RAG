@@ -16,8 +16,7 @@ method retrieves the string representation of the XML value.
 The
 setString(value)
 method sets the XML value using a string representation.
-Jdbc
-SQLXML
+JdbcSQLXML
 A JDBC
 SQLXML
 . For documentation of this class, see
@@ -32,14 +31,12 @@ void
 For documentation of this method, see
 java.sql.SQLXML#free()
 .
-get
-String()
+getString()
 String
 For documentation of this method, see
 java.sql.SQLXML#getString()
 .
-set
-String(value)
+setString(value)
 void
 For documentation of this method, see
 java.sql.SQLXML#setString(String)
@@ -49,16 +46,14 @@ free()
 For documentation of this method, see
 java.sql.SQLXML#free()
 .
-get
-String()
+getString()
 For documentation of this method, see
 java.sql.SQLXML#getString()
 .
 Return
 String
 — The string representation of the XML value designated by this SQLXML instance.
-set
-String(value)
+setString(value)
 For documentation of this method, see
 java.sql.SQLXML#setString(String)
 .

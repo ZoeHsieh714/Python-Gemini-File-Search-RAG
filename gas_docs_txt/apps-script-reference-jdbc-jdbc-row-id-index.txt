@@ -1,11 +1,8 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-row-id/index.html
 
-Jdbc
-Row
-Id
+JdbcRowId
 A JDBC
-Row
-Id
+RowId
 . For documentation of this class, see
 java.sql.RowId
 .
@@ -13,15 +10,13 @@ Methods
 Method
 Return type
 Brief description
-get
-Bytes()
+getBytes()
 Byte[]
 For documentation of this method, see
 java.sql.RowId#getBytes()
 .
 Detailed documentation
-get
-Bytes()
+getBytes()
 For documentation of this method, see
 java.sql.RowId#getBytes()
 .
@@ -30,7 +25,5 @@ Byte[]
 — The bytes representing the
 ROWID
 represented by this
-Jdbc
-Row
-Id
+JdbcRowId
 .

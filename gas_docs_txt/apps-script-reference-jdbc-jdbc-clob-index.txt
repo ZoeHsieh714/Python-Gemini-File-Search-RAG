@@ -9,8 +9,7 @@ Methods are available to retrieve the Clob content as an Apps Script Blob or a s
 You can get the length of the Clob and find the position of a substring or another Clob within it.
 Methods are provided to write strings or BlobSource data to the Clob at a specified position.
 The Clob can be truncated to a specified length, and resources associated with it can be freed.
-Jdbc
-Clob
+JdbcClob
 A JDBC
 Clob
 . For documentation of this class, see
@@ -25,19 +24,13 @@ void
 For documentation of this method, see
 java.sql.Clob#truncate(long)
 .
-get
-Apps
-Script
-Blob()
+getAppsScriptBlob()
 Blob
 Gets the content of this JdbcClob as an Apps Script blob.
-get
-As(contentType)
+getAs(contentType)
 Blob
 Return the data inside this object as a blob converted to the specified content type.
-get
-Sub
-String(position, length)
+getSubString(position, length)
 String
 For documentation of this method, see
 java.sql.Clob#getSubString(long, int)
@@ -57,28 +50,22 @@ Integer
 For documentation of this method, see
 java.sql.Clob#position(String, long)
 .
-set
-String(position, blobSource)
+setString(position, blobSource)
 Integer
 Convenience method for writing a
-Jdbc
-Clob
+JdbcClob
 to a clob.
-set
-String(position, blobSource, offset, len)
+setString(position, blobSource, offset, len)
 Integer
 Convenience method for writing a
-Jdbc
-Clob
+JdbcClob
 to a clob.
-set
-String(position, value)
+setString(position, value)
 Integer
 For documentation of this method, see
 java.sql.Clob#setString(long, String)
 .
-set
-String(position, value, offset, len)
+setString(position, value, offset, len)
 Integer
 For documentation of this method, see
 java.sql.Clob#setString(long, String, int, int)
@@ -93,18 +80,14 @@ free()
 For documentation of this method, see
 java.sql.Clob#truncate(long)
 .
-get
-Apps
-Script
-Blob()
+getAppsScriptBlob()
 Gets the content of this JdbcClob as an Apps Script blob.
 Return
 Blob
 — A
 Blob
 that can be used directly by other Apps Script APIs.
-get
-As(contentType)
+getAs(contentType)
 Return the data inside this object as a blob converted to the specified content type. This
 method adds the appropriate extension to the filename—for example, "myfile.pdf". However, it
 assumes that the part of the filename that follows the last period (if any) is an existing
@@ -119,8 +102,7 @@ Parameters
 Name
 Type
 Description
-content
-Type
+contentType
 String
 The MIME type to convert to. For most blobs,
 'application/pdf'
@@ -140,9 +122,7 @@ is also valid.
 Return
 Blob
 — The data as a blob.
-get
-Sub
-String(position, length)
+getSubString(position, length)
 For documentation of this method, see
 java.sql.Clob#getSubString(long, int)
 .
@@ -176,8 +156,7 @@ Name
 Type
 Description
 search
-Jdbc
-Clob
+JdbcClob
 The clob object to search for.
 start
 Integer
@@ -202,11 +181,9 @@ The position at which to begin searching; the first position is 1.
 Return
 Integer
 — The position at which the specifed substring appears, or -1 if it is not present.
-set
-String(position, blobSource)
+setString(position, blobSource)
 Convenience method for writing a
-Jdbc
-Clob
+JdbcClob
 to a clob.
 Parameters
 Name
@@ -215,19 +192,15 @@ Description
 position
 Integer
 The position at which writing to the clob starts; the first position is 1.
-blob
-Source
-Blob
-Source
+blobSource
+BlobSource
 The blob source to write.
 Return
 Integer
 — The number of characters written.
-set
-String(position, blobSource, offset, len)
+setString(position, blobSource, offset, len)
 Convenience method for writing a
-Jdbc
-Clob
+JdbcClob
 to a clob.
 Parameters
 Name
@@ -236,10 +209,8 @@ Description
 position
 Integer
 The position at which writing to the clob starts; the first position is 1.
-blob
-Source
-Blob
-Source
+blobSource
+BlobSource
 The blob source to write.
 offset
 Integer
@@ -250,8 +221,7 @@ The number of characters to write.
 Return
 Integer
 — The number of characters written.
-set
-String(position, value)
+setString(position, value)
 For documentation of this method, see
 java.sql.Clob#setString(long, String)
 .
@@ -268,8 +238,7 @@ The string to write.
 Return
 Integer
 — The number of characters written.
-set
-String(position, value, offset, len)
+setString(position, value, offset, len)
 For documentation of this method, see
 java.sql.Clob#setString(long, String, int, int)
 .

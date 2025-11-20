@@ -28,77 +28,44 @@ Methods
 Method
 Return type
 Brief description
-get
-Cloud
-Sql
-Connection(url)
-Jdbc
-Connection
+getCloudSqlConnection(url)
+JdbcConnection
 Attempts to establish a connection to the given Google Cloud SQL URL.
-get
-Cloud
-Sql
-Connection(url, info)
-Jdbc
-Connection
+getCloudSqlConnection(url, info)
+JdbcConnection
 Attempts to establish a connection to the given Google Cloud SQL URL.
-get
-Cloud
-Sql
-Connection(url, userName, password)
-Jdbc
-Connection
+getCloudSqlConnection(url, userName, password)
+JdbcConnection
 Attempts to establish a connection to the given Google Cloud SQL URL.
-get
-Connection(url)
-Jdbc
-Connection
+getConnection(url)
+JdbcConnection
 Attempts to establish a connection to the given database URL.
-get
-Connection(url, info)
-Jdbc
-Connection
+getConnection(url, info)
+JdbcConnection
 Attempts to establish a connection to the given database URL.
-get
-Connection(url, userName, password)
-Jdbc
-Connection
+getConnection(url, userName, password)
+JdbcConnection
 Attempts to establish a connection to the given database using a username and password.
-new
-Date(milliseconds)
-Jdbc
-Date
+newDate(milliseconds)
+JdbcDate
 Create a date from milliseconds since epoch.
-new
-Time(milliseconds)
-Jdbc
-Time
+newTime(milliseconds)
+JdbcTime
 Create a time from milliseconds since epoch.
-new
-Timestamp(milliseconds)
-Jdbc
-Timestamp
+newTimestamp(milliseconds)
+JdbcTimestamp
 Create a timestamp from milliseconds since epoch.
-parse
-Date(date)
-Jdbc
-Date
+parseDate(date)
+JdbcDate
 Create a date by parsing the SQL date string.
-parse
-Time(time)
-Jdbc
-Time
+parseTime(time)
+JdbcTime
 Create a time by parsing the SQL time string.
-parse
-Timestamp(timestamp)
-Jdbc
-Timestamp
+parseTimestamp(timestamp)
+JdbcTimestamp
 Create a timestamp by parsing the SQL timestamp string.
 Detailed documentation
-get
-Cloud
-Sql
-Connection(url)
+getCloudSqlConnection(url)
 Attempts to establish a connection to the given Google Cloud SQL URL.
 Parameters
 Name
@@ -110,18 +77,14 @@ A database URL of the form
 jdbc:google:mysql://subname
 .
 Return
-Jdbc
-Connection
+JdbcConnection
 — A JdbcConnection object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/sqlservice
-get
-Cloud
-Sql
-Connection(url, info)
+getCloudSqlConnection(url, info)
 Attempts to establish a connection to the given Google Cloud SQL URL.
 Parameters
 Name
@@ -139,9 +102,7 @@ Advanced parameters
 Name
 Type
 Description
-connect
-Timeout
-Seconds
+connectTimeoutSeconds
 Integer
 connection timeout in seconds
 database
@@ -153,27 +114,21 @@ the name of a Google SQL Service instance
 password
 String
 the user's password
-query
-Timeout
-Seconds
+queryTimeoutSeconds
 Integer
 query timeout in seconds
 user
 String
 the username to pass to the database
 Return
-Jdbc
-Connection
+JdbcConnection
 — A JdbcConnection object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/sqlservice
-get
-Cloud
-Sql
-Connection(url, userName, password)
+getCloudSqlConnection(url, userName, password)
 Attempts to establish a connection to the given Google Cloud SQL URL.
 Parameters
 Name
@@ -184,24 +139,21 @@ String
 A database URL of the form
 jdbc:google:mysql://subname
 .
-user
-Name
+userName
 String
 The username to pass to the database.
 password
 String
 The user's password.
 Return
-Jdbc
-Connection
+JdbcConnection
 — A JdbcConnection object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/sqlservice
-get
-Connection(url)
+getConnection(url)
 Attempts to establish a connection to the given database URL.
 const
 conn
@@ -223,16 +175,14 @@ A database URL of the form
 jdbc:subprotocol:subname
 .
 Return
-Jdbc
-Connection
+JdbcConnection
 — A JdbcConnection object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Connection(url, info)
+getConnection(url, info)
 Attempts to establish a connection to the given database URL.
 const
 conn
@@ -269,18 +219,13 @@ Advanced parameters
 Name
 Type
 Description
-database
-Name
+databaseName
 String
 the database to connect to
 password
 String
 the user's password
-use
-JDBCCompliant
-Time
-Zone
-Shift
+useJDBCCompliantTimeZoneShift
 Boolean
 whether or not the connection should
     comply with JDBC rules when converting time zones. The default is
@@ -299,16 +244,14 @@ _clientSslKey
 String
 the client's SSL key
 Return
-Jdbc
-Connection
+JdbcConnection
 — A JdbcConnection object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-get
-Connection(url, userName, password)
+getConnection(url, userName, password)
 Attempts to establish a connection to the given database using a username and password.
 const
 conn
@@ -333,24 +276,21 @@ String
 A database URL of the form
 jdbc:subprotocol:subname
 .
-user
-Name
+userName
 String
 The username to pass to the database.
 password
 String
 The user's password.
 Return
-Jdbc
-Connection
+JdbcConnection
 — A JdbcConnection object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
 :
 https://www.googleapis.com/auth/script.external_request
-new
-Date(milliseconds)
+newDate(milliseconds)
 Create a date from milliseconds since epoch.
 Parameters
 Name
@@ -360,11 +300,9 @@ milliseconds
 Integer
 Milliseconds since epoch.
 Return
-Jdbc
-Date
+JdbcDate
 — A JdbcDate object.
-new
-Time(milliseconds)
+newTime(milliseconds)
 Create a time from milliseconds since epoch.
 Parameters
 Name
@@ -374,11 +312,9 @@ milliseconds
 Integer
 Milliseconds since epoch.
 Return
-Jdbc
-Time
+JdbcTime
 — A JdbcTime object.
-new
-Timestamp(milliseconds)
+newTimestamp(milliseconds)
 Create a timestamp from milliseconds since epoch.
 Parameters
 Name
@@ -388,11 +324,9 @@ milliseconds
 Integer
 Milliseconds since epoch.
 Return
-Jdbc
-Timestamp
+JdbcTimestamp
 — A JdbcTimestamp object.
-parse
-Date(date)
+parseDate(date)
 Create a date by parsing the SQL date string.
 Parameters
 Name
@@ -402,11 +336,9 @@ date
 String
 A string containing a SQL date string.
 Return
-Jdbc
-Date
+JdbcDate
 — A JdbcDate object.
-parse
-Time(time)
+parseTime(time)
 Create a time by parsing the SQL time string.
 Parameters
 Name
@@ -416,11 +348,9 @@ time
 String
 A string containing a SQL time string.
 Return
-Jdbc
-Time
+JdbcTime
 — A JdbcTime object.
-parse
-Timestamp(timestamp)
+parseTimestamp(timestamp)
 Create a timestamp by parsing the SQL timestamp string.
 Parameters
 Name
@@ -430,6 +360,5 @@ timestamp
 String
 A string containing a SQL timestamp string.
 Return
-Jdbc
-Timestamp
+JdbcTimestamp
 — A JdbcTimestamp object.

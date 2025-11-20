@@ -763,16 +763,14 @@ textWithCitations
 The new response with inline citations will look like this:
 Spain won Euro 2024, defeating England 2-1 in the final.[1](https:/...), [2](https:/...), [4](https:/...), [5](https:/...) This victory marks Spain's record-breaking fourth European Championship title.[5]((https:/...), [2](https:/...), [3](https:/...), [4](https:/...)
 Pricing
-When you use Grounding with Google Search, your project is billed per API
-request that includes the
-google_search
-tool. If the model decides to execute
+When you use Grounding with Google Search, your project is billed for each
+search query that the model decides to execute. If the model decides to execute
 multiple search queries to answer a single prompt (for example, searching for
 "UEFA Euro 2024 winner"
 and
 "Spain vs England Euro 2024 final score"
 within
-the same API call), this counts as a single billable use of the tool for that
+the same API call), this counts as two billable uses of the tool for that
 request.
 For detailed pricing information, see the
 Gemini API pricing

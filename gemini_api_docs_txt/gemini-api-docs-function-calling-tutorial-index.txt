@@ -1356,32 +1356,37 @@ them in the description. This improves accuracy ("enum":
 required
 (array): An array of strings listing the parameter names that
 are mandatory for the function to operate.
-You can also construct FunctionDeclarations from Python functions directly using
+You can also construct
+FunctionDeclarations
+from Python functions directly using
 types.FunctionDeclaration.from_callable(client=client, callable=your_function)
 .
-Function calling with thinking
-Enabling "
-thinking
-" can improve function call
-performance by allowing the model to reason through a request before suggesting
-function calls. The Gemini API is stateless, the model's reasoning context will
-be lost between turns in a multi-turn conversation. To preserve this context,
-you can use thought signatures. A thought signature is an encrypted
-representation of the model's internal thought process that you pass back to
-the model on subsequent turns.
-The
-standard pattern for multi-turn tool
-use is to append the model's complete previous response to the conversation
-history. The
-content
-object includes the
-thought_signatures
-automatically.
-If you follow this pattern
-No code changes are required
+Function calling with thinking models
+Gemini 3 and 2.5 series models use an internal
+"thinking"
+process to reason through requests. This
+significantly improves function calling performance,
+allowing the model to better determine when to call a function and which
+parameters to use. Because the Gemini API is stateless, models use
+thought signatures
+to maintain context
+across multi-turn conversations.
+This section covers advanced management of thought signatures and is only
+necessary if you're manually constructing API requests (e.g., via REST) or
+manipulating conversation history.
+If you're using the
+Google GenAI SDKs
+(our
+official libraries), you don't need to manage this process
+. The SDKs
+automatically handle the necessary steps, as shown in the earlier
+example
 .
-Manually managing thought signatures
-If you modify the conversation history manually—instead of sending the complete previous response and want to benefit from thinking you must correctly handle the
+Managing conversation history manually
+If you modify the conversation history manually, instead of sending the
+complete previous response
+you
+must correctly handle the
 thought_signature
 included in the model's turn.
 Follow these rules to ensure the model's context is preserved:
@@ -1392,11 +1397,28 @@ Part
 .
 Don't merge a
 Part
-containing a signature with one that does not. This breaks the positional context of the thought.
+containing a signature with one that does not. This
+breaks the positional context of the thought.
 Don't combine two
 Parts
-that both contain signatures, as the signature strings cannot be merged.
-Inspecting Thought Signatures
+that both contain signatures, as the signature
+strings cannot be merged.
+Gemini 3 thought signatures
+In Gemini 3, any
+Part
+of a model response
+may contain a thought signature.
+While we generally recommend returning signatures from all
+Part
+types,
+passing back thought signatures is mandatory for function calling. Unless you
+are manipulating conversation history manually, the Google GenAI SDK will
+handle thought signatures automatically.
+If you are manipulating conversation history manually, refer to the
+Thoughts Signatures
+page for complete
+guidance and details on handling thought signatures for Gemini 3.
+Inspecting thought signatures
 While not necessary for implementation, you can inspect the response to see the
 thought_signature
 for debugging or educational purposes.
@@ -3883,6 +3905,11 @@ if needed.
 Temperature:
 Use a low temperature (e.g., 0) for more deterministic and
 reliable function calls.
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 Validation:
 If a function call has significant consequences (e.g.,
 placing an order), validate the call with the user before executing it.

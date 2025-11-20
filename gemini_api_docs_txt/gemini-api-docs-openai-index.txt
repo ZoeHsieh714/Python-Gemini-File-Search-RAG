@@ -175,28 +175,53 @@ base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 This
 tells the OpenAI library to send requests to the Gemini API endpoint instead of
 the default URL.
-model="gemini-2.0-flash"
+model="gemini-2.5-flash"
 : Choose a compatible Gemini model
 Thinking
-Gemini 2.5 models are trained to think through complex problems, leading to
-significantly improved reasoning. The Gemini API comes with a
-"thinking budget"
-parameter
-which gives fine grain control
-over how much the model will think.
-Unlike the Gemini API, the OpenAI API offers three levels of thinking control:
+Gemini 3 and 2.5 models are trained to think through complex problems, leading
+to significantly improved reasoning. The Gemini API comes with
+thinking
+parameters
+which give fine grain
+control over how much the model will think.
+Gemini 3 uses
 "low"
-,
-"medium"
-, and
+and
 "high"
-, which map to 1,024, 8,192, and 24,576 tokens,
-respectively.
+thinking levels, and Gemini 2.5 models use
+exact thinking budgets. These map to OpenAI's reasoning efforts as follows:
+reasoning_effort
+(OpenAI)
+thinking_level
+(Gemini 3)
+thinking_budget
+(Gemini 2.5)
+minimal
+low
+1,024
+low
+low
+1,024
+medium
+high
+8,192
+high
+high
+24,576
+If no
+reasoning_effort
+is specified, Gemini uses the model's
+default
+level
+or
+budget
+.
 If you want to disable thinking, you can set
 reasoning_effort
 to
 "none"
-(note that reasoning cannot be turned off for 2.5 Pro models).
+for
+2.5 models. Reasoning cannot be turned off for Gemini 2.5 Pro or 3 models.
 Python
 from
 openai
@@ -362,19 +387,19 @@ curl
 }'
 Gemini thinking models also produce
 thought summaries
-and can use exact
-thinking budgets
 .
 You can use the
 extra_body
-field to include these fields
+field to include Gemini fields
 in your request.
 Note that
 reasoning_effort
 and
+thinking_level
+/
 thinking_budget
-overlap functionality, so
-they can't be used at the same time.
+overlap
+functionality, so they can't be used at the same time.
 Python
 from
 openai
@@ -431,7 +456,7 @@ extra_body
 {
 "thinking_budget"
 :
-800
+"low"
 ,
 "include_thoughts"
 :
@@ -510,7 +535,7 @@ extra_body
 {
 "thinking_budget"
 :
-800
+"low"
 ,
 "include_thoughts"
 :
@@ -553,6 +578,10 @@ curl
 }
 }
 }'
+Gemini 3 supports OpenAI compatibility for thought signatures in chat completion
+APIs. You can find the full example on the
+thought signatures
+page.
 Streaming
 The Gemini API supports
 streaming responses
