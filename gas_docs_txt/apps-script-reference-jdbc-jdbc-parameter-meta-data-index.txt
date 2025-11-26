@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-parameter-meta-data/index.html
+Source Path: gas_docs_html\apps-script\reference\jdbc\jdbc-parameter-meta-data\index.html
 
 AI-generated Key Takeaways
 outlined_flag

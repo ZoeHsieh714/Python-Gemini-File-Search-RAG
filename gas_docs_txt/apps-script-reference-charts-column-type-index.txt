@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/charts/column-type/index.html
+Source Path: gas_docs_html\apps-script\reference\charts\column-type\index.html
 
 Column
 Type

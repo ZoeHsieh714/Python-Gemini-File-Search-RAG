@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/llama-index/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\llama-index\index.html
 
 LlamaIndex is a framework for building knowledge agents using LLMs connected to your data. This example shows you how to build a multi-agent workflow for a Research Agent. In LlamaIndex,
 Workflows

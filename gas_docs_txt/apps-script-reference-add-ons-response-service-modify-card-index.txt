@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/modify-card/index.html
+Source Path: gas_docs_html\apps-script\reference\add-ons-response-service\modify-card\index.html
 
 Modify
 Card

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/live/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\live\index.html
 
 The Live API enables low-latency, real-time voice and video interactions with
 Gemini. It processes continuous streams of audio, video, or text to deliver

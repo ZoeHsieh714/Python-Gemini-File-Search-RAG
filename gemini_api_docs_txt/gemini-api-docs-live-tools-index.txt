@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/live-tools/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\live-tools\index.html
 
 Tool use allows Live API to go beyond just conversation by enabling it to
 perform actions in the real-world and pull in external context while maintaining

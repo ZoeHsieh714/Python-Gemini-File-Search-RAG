@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/navigation/index.html
+Source Path: gas_docs_html\apps-script\reference\add-ons-response-service\navigation\index.html
 
 Navigation
 A helper object that controls card navigation. See the

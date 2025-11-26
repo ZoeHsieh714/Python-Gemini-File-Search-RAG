@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/logs-datasets/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\logs-datasets\index.html
 
 This guide contains everything you need to get started with enabling logging
 for your existing Gemini API applications. In this guide you'll learn how to

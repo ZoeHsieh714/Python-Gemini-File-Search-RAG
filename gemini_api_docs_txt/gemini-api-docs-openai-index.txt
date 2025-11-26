@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/openai/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\openai\index.html
 
 Gemini models are accessible using the OpenAI libraries (Python and TypeScript /
 Javascript) along with the REST API, by updating three lines of code

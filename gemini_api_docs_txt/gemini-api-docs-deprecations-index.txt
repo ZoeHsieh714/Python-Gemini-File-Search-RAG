@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/deprecations/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\deprecations\index.html
 
 This page lists the known deprecation schedules for Stable (GA) and Preview
 models in the Gemini API. A deprecation announcement means we will no longer

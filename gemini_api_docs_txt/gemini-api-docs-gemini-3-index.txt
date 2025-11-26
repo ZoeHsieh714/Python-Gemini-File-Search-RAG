@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/gemini-3/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\gemini-3\index.html
 
 Gemini 3 is our most intelligent model family to date, built on a foundation of state-of-the-art reasoning. It is designed to bring any idea to life by mastering agentic workflows, autonomous coding, and complex multimodal tasks. This guide covers key features of the Gemini 3 model family and how to get the most out of it.
 High/Dynamic Thinking

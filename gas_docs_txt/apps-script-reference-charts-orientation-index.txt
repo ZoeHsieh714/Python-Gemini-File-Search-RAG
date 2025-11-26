@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/charts/orientation/index.html
+Source Path: gas_docs_html\apps-script\reference\charts\orientation\index.html
 
 Orientation
 An enumeration of the orientation of an object.

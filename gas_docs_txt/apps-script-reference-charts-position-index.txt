@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/charts/position/index.html
+Source Path: gas_docs_html\apps-script\reference\charts\position\index.html
 
 Position
 An enumeration of legend positions within a chart.

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/ephemeral-tokens/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\ephemeral-tokens\index.html
 
 Ephemeral tokens are short-lived authentication tokens for accessing the Gemini
 API through

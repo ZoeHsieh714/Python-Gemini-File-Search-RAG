@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/common-widget-action/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\common-widget-action\index.html
 
 Common
 Widget

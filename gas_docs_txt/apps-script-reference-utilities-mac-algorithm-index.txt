@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/utilities/mac-algorithm/index.html
+Source Path: gas_docs_html\apps-script\reference\utilities\mac-algorithm\index.html
 
 Mac
 Algorithm

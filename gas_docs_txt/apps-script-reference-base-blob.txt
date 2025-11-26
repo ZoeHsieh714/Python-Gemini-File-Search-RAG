@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/base/blob.html
+Source Path: gas_docs_html\apps-script\reference\base\blob.html
 
 AI-generated Key Takeaways
 outlined_flag

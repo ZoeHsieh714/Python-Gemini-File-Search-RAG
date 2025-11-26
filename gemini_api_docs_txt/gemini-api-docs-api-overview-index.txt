@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/api-overview/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\api-overview\index.html
 
 This API reference describes the standard, streaming, and realtime APIs you can
 use to interact with the Gemini models. You can use the REST APIs in any

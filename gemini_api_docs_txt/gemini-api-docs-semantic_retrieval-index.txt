@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/semantic_retrieval/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\semantic_retrieval\index.html
 
 Gemini API
 The developer platform to build and scale with Google's latest AI models. Start in minutes.

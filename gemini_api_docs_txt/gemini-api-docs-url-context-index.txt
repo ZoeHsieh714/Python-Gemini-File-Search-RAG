@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/url-context/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\url-context\index.html
 
 The URL context tool lets you provide additional context to the models in the
 form of URLs. By including URLs in your request, the model will access

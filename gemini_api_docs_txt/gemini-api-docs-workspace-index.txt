@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/workspace/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\workspace\index.html
 
 All
 Google Workspace

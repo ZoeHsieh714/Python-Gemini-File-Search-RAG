@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/charts/chart-type.html
+Source Path: gas_docs_html\apps-script\reference\charts\chart-type.html
 
 AI-generated Key Takeaways
 outlined_flag

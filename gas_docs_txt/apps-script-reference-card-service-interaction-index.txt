@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/interaction/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\interaction\index.html
 
 Interaction
 An enum type that specifies what to do in response to an interaction with a user, such as a user

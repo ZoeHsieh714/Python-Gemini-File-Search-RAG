@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/base/rgb-color/index.html
+Source Path: gas_docs_html\apps-script\reference\base\rgb-color\index.html
 
 AI-generated Key Takeaways
 outlined_flag

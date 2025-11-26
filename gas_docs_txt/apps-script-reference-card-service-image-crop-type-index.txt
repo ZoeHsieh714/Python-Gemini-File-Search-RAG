@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/image-crop-type/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\image-crop-type\index.html
 
 Image
 Crop

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/computer-use/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\computer-use\index.html
 
 The Gemini 2.5 Computer Use Preview model and tool enable you to build browser
 control agents that interact with and automate tasks. Using screenshots, the

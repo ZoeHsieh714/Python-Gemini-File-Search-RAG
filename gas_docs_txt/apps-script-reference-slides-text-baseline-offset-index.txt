@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/slides/text-baseline-offset/index.html
+Source Path: gas_docs_html\apps-script\reference\slides\text-baseline-offset\index.html
 
 Text
 Baseline

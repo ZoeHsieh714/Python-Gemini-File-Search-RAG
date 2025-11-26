@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/spreadsheet/date-time-grouping-rule/index.html
+Source Path: gas_docs_html\apps-script\reference\spreadsheet\date-time-grouping-rule\index.html
 
 Date
 Time

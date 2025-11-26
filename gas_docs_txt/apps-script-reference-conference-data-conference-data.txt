@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/conference-data/conference-data.html
+Source Path: gas_docs_html\apps-script\reference\conference-data\conference-data.html
 
 AI-generated Key Takeaways
 outlined_flag

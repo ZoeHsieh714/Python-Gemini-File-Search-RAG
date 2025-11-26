@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/migrate-to-cloud/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\migrate-to-cloud\index.html
 
 When developing generative AI solutions with Gemini, Google offers two API products:
 the

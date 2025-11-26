@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/spreadsheet/dimension/index.html
+Source Path: gas_docs_html\apps-script\reference\spreadsheet\dimension\index.html
 
 Dimension
 An enumeration of possible directions along which data can be stored in a spreadsheet.

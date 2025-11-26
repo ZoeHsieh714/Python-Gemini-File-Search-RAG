@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/troubleshoot-ai-studio/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\troubleshoot-ai-studio\index.html
 
 This page provides suggestions for troubleshooting Google AI Studio if you
 encounter issues.

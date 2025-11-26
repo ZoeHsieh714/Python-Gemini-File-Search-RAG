@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/open-as/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\open-as\index.html
 
 Open
 As

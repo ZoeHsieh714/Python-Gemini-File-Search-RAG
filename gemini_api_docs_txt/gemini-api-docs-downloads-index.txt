@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/downloads/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\downloads\index.html
 
 When building with the Gemini API, we recommend using the
 Google GenAI SDK

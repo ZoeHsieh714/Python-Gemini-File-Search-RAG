@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/display-style/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\display-style\index.html
 
 Display
 Style

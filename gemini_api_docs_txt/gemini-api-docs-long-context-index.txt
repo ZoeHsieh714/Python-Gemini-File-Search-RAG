@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/long-context/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\long-context\index.html
 
 Many Gemini models come with large context windows of 1 million or more tokens.
 Historically, large language models (LLMs) were significantly limited by

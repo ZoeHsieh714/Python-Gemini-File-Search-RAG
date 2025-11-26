@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/video/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\video\index.html
 
 Veo 3.1
 is Google's state-of-the-art

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/prompting-intro/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\prompting-intro\index.html
 
 Prompt design
 is the process of creating prompts, or natural language requests,

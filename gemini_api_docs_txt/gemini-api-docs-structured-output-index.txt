@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/structured-output/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\structured-output\index.html
 
 You can configure Gemini models to generate responses that adhere to a provided
 JSON Schema. This capability guarantees predictable and parsable results, ensures format

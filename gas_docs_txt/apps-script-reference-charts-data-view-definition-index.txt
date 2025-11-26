@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/charts/data-view-definition/index.html
+Source Path: gas_docs_html\apps-script\reference\charts\data-view-definition\index.html
 
 Data
 View

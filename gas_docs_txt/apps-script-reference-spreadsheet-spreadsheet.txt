@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/spreadsheet/spreadsheet.html
+Source Path: gas_docs_html\apps-script\reference\spreadsheet\spreadsheet.html
 
 AI-generated Key Takeaways
 outlined_flag

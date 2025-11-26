@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/file-search/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\file-search\index.html
 
 The Gemini API enables Retrieval Augmented Generation ("RAG") through the File
 Search tool. File Search imports, chunks, and indexes your data to

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/speech-generation/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\speech-generation\index.html
 
 The Gemini API can transform text input into single speaker or multi-speaker
 audio using native text-to-speech (TTS) generation capabilities.

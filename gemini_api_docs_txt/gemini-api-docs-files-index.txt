@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/files/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\files\index.html
 
 The Gemini family of artificial intelligence (AI) models is built to handle
 various types of input data, including text, images, and audio. Since these

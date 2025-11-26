@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/maps/avoid/index.html
+Source Path: gas_docs_html\apps-script\reference\maps\avoid\index.html
 
 Avoid
 An enum representing the types of restrictions to avoid when finding directions.

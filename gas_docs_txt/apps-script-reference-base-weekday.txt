@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/base/weekday.html
+Source Path: gas_docs_html\apps-script\reference\base\weekday.html
 
 Weekday
 An enum representing the days of the week.

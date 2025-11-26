@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/border-type/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\border-type\index.html
 
 Border
 Type

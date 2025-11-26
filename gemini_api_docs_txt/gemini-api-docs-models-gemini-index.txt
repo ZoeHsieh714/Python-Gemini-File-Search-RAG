@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/models/gemini/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\models\gemini\index.html
 
 OUR MOST INTELLIGENT MODEL
 Gemini 3 Pro

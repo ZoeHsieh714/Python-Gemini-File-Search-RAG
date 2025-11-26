@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/troubleshooting/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\troubleshooting\index.html
 
 Use this guide to help you diagnose and resolve common issues that arise when
 you call the Gemini API. You may encounter issues from either

@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/date-picker/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\date-picker\index.html
 
 AI-generated Key Takeaways
 outlined_flag

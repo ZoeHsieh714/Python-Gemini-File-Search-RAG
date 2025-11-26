@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/audio/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\audio\index.html
 
 Gemini can analyze and understand audio input, enabling use cases like the
 following:

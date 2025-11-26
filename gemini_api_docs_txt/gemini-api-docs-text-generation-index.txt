@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/text-generation/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\text-generation\index.html
 
 The Gemini API can generate text output from various inputs, including text,
 images, video, and audio, leveraging Gemini models.

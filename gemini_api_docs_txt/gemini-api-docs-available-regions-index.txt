@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/available-regions/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\available-regions\index.html
 
 If you reached this page after trying to open
 Google AI Studio

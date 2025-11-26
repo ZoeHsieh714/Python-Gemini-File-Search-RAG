@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/forms/rating-icon-type/index.html
+Source Path: gas_docs_html\apps-script\reference\forms\rating-icon-type\index.html
 
 Rating
 Icon

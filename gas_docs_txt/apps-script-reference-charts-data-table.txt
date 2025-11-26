@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/charts/data-table.html
+Source Path: gas_docs_html\apps-script\reference\charts\data-table.html
 
 Data
 Table

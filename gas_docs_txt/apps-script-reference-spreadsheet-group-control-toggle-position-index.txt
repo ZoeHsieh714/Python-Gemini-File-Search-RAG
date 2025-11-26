@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/spreadsheet/group-control-toggle-position/index.html
+Source Path: gas_docs_html\apps-script\reference\spreadsheet\group-control-toggle-position\index.html
 
 Group
 Control

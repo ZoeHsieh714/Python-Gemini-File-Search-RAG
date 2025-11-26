@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-row-id/index.html
+Source Path: gas_docs_html\apps-script\reference\jdbc\jdbc-row-id\index.html
 
 JdbcRowId
 A JDBC

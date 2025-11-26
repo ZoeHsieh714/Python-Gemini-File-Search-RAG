@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/aistudio-build-mode/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\aistudio-build-mode\index.html
 
 This page describes how you can use the Build mode in Google AI Studio to
 quickly build (or vibe code) and deploy apps that test out the latest

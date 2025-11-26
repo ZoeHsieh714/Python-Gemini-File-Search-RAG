@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/switch-control-type/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\switch-control-type\index.html
 
 Switch
 Control

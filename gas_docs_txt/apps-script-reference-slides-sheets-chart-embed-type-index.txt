@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/slides/sheets-chart-embed-type/index.html
+Source Path: gas_docs_html\apps-script\reference\slides\sheets-chart-embed-type\index.html
 
 Sheets
 Chart

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/logs-policy/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\logs-policy\index.html
 
 This page outlines the storage and management of
 Gemini API logs

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/migrate/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\migrate\index.html
 
 Starting with the Gemini 2.0 release in late 2024, we introduced a new set of
 libraries called the

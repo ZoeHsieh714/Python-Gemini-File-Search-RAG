@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/condition/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\condition\index.html
 
 Condition
 A condition used to run an event action as part of

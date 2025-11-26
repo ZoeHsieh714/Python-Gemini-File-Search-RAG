@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/api-key/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\api-key\index.html
 
 To use the Gemini API, you need an API key. This page outlines how to create and
 manage your keys in Google AI Studio as well as how to set up your environment

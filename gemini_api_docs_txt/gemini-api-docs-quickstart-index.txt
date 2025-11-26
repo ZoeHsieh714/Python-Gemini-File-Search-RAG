@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/quickstart/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\quickstart\index.html
 
 This quickstart shows you how to install our
 libraries

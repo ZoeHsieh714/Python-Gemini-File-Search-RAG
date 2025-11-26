@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/url-fetch/url-fetch-app.html
+Source Path: gas_docs_html\apps-script\reference\url-fetch\url-fetch-app.html
 
 AI-generated Key Takeaways
 outlined_flag

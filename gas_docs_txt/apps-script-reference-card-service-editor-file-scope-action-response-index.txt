@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/editor-file-scope-action-response/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\editor-file-scope-action-response\index.html
 
 Editor
 File

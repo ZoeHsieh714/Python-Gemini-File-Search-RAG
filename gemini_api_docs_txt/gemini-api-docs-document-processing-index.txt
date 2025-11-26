@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/document-processing/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\document-processing\index.html
 
 Gemini models can process documents in PDF format, using native
 vision to understand entire document contexts. This goes beyond

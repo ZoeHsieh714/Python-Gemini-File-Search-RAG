@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/load-indicator/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\load-indicator\index.html
 
 Load
 Indicator

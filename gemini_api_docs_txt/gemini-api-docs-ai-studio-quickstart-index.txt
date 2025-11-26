@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/ai-studio-quickstart/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\ai-studio-quickstart\index.html
 
 Google AI Studio
 lets you quickly try out

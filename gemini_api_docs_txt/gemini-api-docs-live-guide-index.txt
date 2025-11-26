@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/live-guide/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\live-guide\index.html
 
 Preview:
 The Live API is in preview.

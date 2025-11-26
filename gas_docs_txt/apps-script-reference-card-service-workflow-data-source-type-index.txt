@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/workflow-data-source-type/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\workflow-data-source-type\index.html
 
 Workflow
 Data

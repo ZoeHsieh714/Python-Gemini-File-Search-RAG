@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/safety-settings/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\safety-settings\index.html
 
 The Gemini API provides safety settings that you can adjust during the
 prototyping stage to determine if your application requires more or less

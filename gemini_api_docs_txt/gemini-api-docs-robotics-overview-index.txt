@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/robotics-overview/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\robotics-overview\index.html
 
 Preview:
 The Gemini Robotics-ER 1.5 model is currently in preview.

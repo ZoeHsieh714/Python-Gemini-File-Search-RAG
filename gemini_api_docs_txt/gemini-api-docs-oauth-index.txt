@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/oauth/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\oauth\index.html
 
 The easiest way to authenticate to the Gemini API is to configure an API key, as
 described in the

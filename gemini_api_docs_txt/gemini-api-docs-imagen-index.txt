@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/imagen/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\imagen\index.html
 
 Imagen is Google's high-fidelity image generation model, capable of generating
 realistic and high quality images from text prompts. All generated images

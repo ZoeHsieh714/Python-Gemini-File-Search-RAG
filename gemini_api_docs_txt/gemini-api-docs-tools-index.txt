@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/tools/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\tools\index.html
 
 Tools extend the capabilities of Gemini models, enabling them to take action in the world, access real-time information, and perform complex computational tasks. Models can use tools in both standard request-response interactions and real-time streaming sessions via the
 Live API

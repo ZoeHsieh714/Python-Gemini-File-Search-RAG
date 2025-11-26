@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/live-session/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\live-session\index.html
 
 In the Live API, a session refers to a persistent
 connection where input and output are streamed continuously over the same

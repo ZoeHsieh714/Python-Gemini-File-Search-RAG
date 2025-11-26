@@ -25,12 +25,14 @@ Gemini File Search API を活用したRAG（Retrieval-Augmented Generation）シ
 ### 1. 初期設定
 
 #### a. リポジトリのクローン
+
 ```bash
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name```
-
+```
 #### b. 必要なライブラリのインストール
 Python環境（3.9以上を推奨）で、以下のコマンドを実行します。
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -81,11 +83,12 @@ FILE_SEARCH_STORE_NAME = "fileSearchStores/xxxxxxxxxxxx" # ← ここを書き�
 ターミナルで以下のコマンドを実行すると、AIとの対話が始まります。
 ```bash
 python query_rag.py
-``````
+```
+
 GASに関する質問を入力してください (終了するには Enter のみ): 
 ```
 GASやGemini APIに関する質問を自由に入力してください。
-
+```
 ## 🤖 GitHub Actionsによる知識の自動更新
 
 このリポジトリには、ドキュメントを自動で更新するためのGitHub Actionsワークフロー (`.github/workflows/update-docs.yml`) が含まれています。

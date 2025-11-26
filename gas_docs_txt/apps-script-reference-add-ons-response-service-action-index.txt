@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/action/index.html
+Source Path: gas_docs_html\apps-script\reference\add-ons-response-service\action\index.html
 
 Action
 An action that Google Workspace add-ons that extend Google Workspace Flows can use to render a

@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/calendar/event-type/index.html
+Source Path: gas_docs_html\apps-script\reference\calendar\event-type\index.html
 
 Event
 Type

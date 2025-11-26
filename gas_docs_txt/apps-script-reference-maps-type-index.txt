@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/maps/type/index.html
+Source Path: gas_docs_html\apps-script\reference\maps\type\index.html
 
 Type
 An enum representing the type of map to render.

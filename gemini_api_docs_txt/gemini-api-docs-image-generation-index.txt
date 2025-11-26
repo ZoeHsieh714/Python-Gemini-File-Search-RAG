@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/image-generation/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\image-generation\index.html
 
 Gemini can generate and process images conversationally. You can prompt Gemini
 with text, images, or a combination of both allowing you to create, edit, and

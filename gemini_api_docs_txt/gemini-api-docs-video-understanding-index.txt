@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/video-understanding/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\video-understanding\index.html
 
 Gemini models can process videos, enabling many frontier developer use cases
 that would have historically required domain specific models.

@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/card-service/visibility/index.html
+Source Path: gas_docs_html\apps-script\reference\card-service\visibility\index.html
 
 Visibility
 An enum that represents the visibility state of the widgets.

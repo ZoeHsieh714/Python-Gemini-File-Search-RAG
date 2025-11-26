@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/model-tuning/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\model-tuning\index.html
 
 With the deprecation of Gemini 1.5 Flash-001 in May 2025, we no longer have a
 model available which supports fine-tuning in the Gemini API, but it is supported

@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/changelog/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\changelog\index.html
 
 This page documents updates to the Gemini API.
 November 18, 2025

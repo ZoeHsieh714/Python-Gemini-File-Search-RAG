@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/maps/marker-size/index.html
+Source Path: gas_docs_html\apps-script\reference\maps\marker-size\index.html
 
 Marker
 Size

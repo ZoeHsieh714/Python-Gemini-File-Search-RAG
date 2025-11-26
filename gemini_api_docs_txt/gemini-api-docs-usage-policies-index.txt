@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/usage-policies/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\usage-policies\index.html
 
 This page includes additional usage policies for the Gemini API.
 Abuse monitoring

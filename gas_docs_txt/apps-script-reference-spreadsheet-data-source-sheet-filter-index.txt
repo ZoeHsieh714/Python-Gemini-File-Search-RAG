@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-sheet-filter/index.html
+Source Path: gas_docs_html\apps-script\reference\spreadsheet\data-source-sheet-filter\index.html
 
 AI-generated Key Takeaways
 outlined_flag

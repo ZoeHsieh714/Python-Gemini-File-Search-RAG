@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/langgraph-example/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\langgraph-example\index.html
 
 LangGraph is a framework for building stateful LLM applications, making it a good choice for constructing ReAct (Reasoning and Acting) Agents.
 ReAct agents combine LLM reasoning with action execution. They iteratively think, use tools, and act on observations to achieve user goals, dynamically adapting their approach. Introduced in

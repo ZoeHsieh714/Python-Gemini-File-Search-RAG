@@ -1,4 +1,4 @@
-Source Path: gas_docs_html/apps-script/reference/gmail/gmail-message.html
+Source Path: gas_docs_html\apps-script\reference\gmail\gmail-message.html
 
 AI-generated Key Takeaways
 outlined_flag

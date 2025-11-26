@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/rate-limits/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\rate-limits\index.html
 
 Rate limits regulate the number of requests you can make to the Gemini API
 within a given timeframe. These limits help maintain fair usage, protect against

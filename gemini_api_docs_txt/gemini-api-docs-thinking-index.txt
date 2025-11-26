@@ -1,4 +1,4 @@
-Source Path: gemini_api_docs_html/gemini-api/docs/thinking/index.html
+Source Path: gemini_api_docs_html\gemini-api\docs\thinking\index.html
 
 The
 Gemini 3 and 2.5 series models
